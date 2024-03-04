@@ -1,0 +1,57 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: x-large;
+  font-weight: 300px;
+}
+
+/* Estilo do corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo do cabeçalho */
+.barranav {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-top: #007bff;
+  font-weight: 300;
+}
+
+/*Estilo do texto inicial */
+.container h1 {
+  background-color: #dd7474;
+  color: #0b0d0f;
+  text-align: center;
+}
+/* estilo da img */
+.foto{
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo do rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+p{
+    text-align: center;
+    border-radius: 1px;
+}
+.preenchimento{
+    text-align: center;
+}
