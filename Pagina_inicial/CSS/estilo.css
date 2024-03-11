@@ -19,7 +19,7 @@ body {
 
 /* Estilo do cabeçalho */
 .barranav {
-  background-color: #333;
+  background-color: #a11598;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -31,8 +31,8 @@ body {
 
 /*Estilo do texto inicial */
 .container h1 {
-  background-color: #dd7474;
-  color: #0b0d0f;
+  background-color: rgb(219, 90, 210)
+  color#0b0d0f;
   text-align: center;
 }
 /* estilo da img */
@@ -43,7 +43,7 @@ body {
 
 /* Estilo do rodapé */
 footer {
-  background-color: #333;
+  background-color: #a11598;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -54,4 +54,8 @@ p{
 }
 .preenchimento{
     text-align: center;
+}
+img{
+  width: 700px;
+  
 }
