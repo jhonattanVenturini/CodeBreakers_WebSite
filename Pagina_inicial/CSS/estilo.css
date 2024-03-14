@@ -9,53 +9,86 @@
 
 /* Estilo do corpo da página */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #fff;
   color: #333;
   line-height: 1.6;
   margin: 0;
   padding: 0;
 }
+/* barra de navegação */
+.container {
+  background-color: #df9712;
+  display: flex;
+  font-size: x-large;
+}
+/* logo */
+.container img {
+  width: 100px;
+  width: 100px;
+  padding: 0.5rem;
+  text-align: left;
+  justify-content: left;
+}
+/* paginas */
+.container a{
+  display: inline-flex;
+  padding: 0.5rem;
+  word-spacing: 100px;
+  color: #fafafa;
+  justify-content:center;
+}
+/* conteudo da pagina */
+.conteudo{
+  text-align: center;
+  border-radius: 50px;
+  justify-items: auto;
+}
 
-/* Estilo do cabeçalho */
-.barranav {
-  background-color: #a11598;
-  color: #fff;
+/* carossel */
+#foto{
+  width: 1600px;
+  width: 1583px;
+  border-radius: 10;
+  border: #df9712;
+  font-weight: 300;  
+} 
+.card{
+  flex: 1 1 25%; 
+  margin: 10px; 
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
   padding: 20px;
-  text-align: center;
-  font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  border-top: #007bff;
-  font-weight: 300;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
 }
 
-/*Estilo do texto inicial */
-.container h1 {
-  background-color: rgb(219, 90, 210)
-  color#0b0d0f;
-  text-align: center;
-}
-/* estilo da img */
-.foto{
-    display: flex;
-    justify-content: center;
+
+.produtos button{
+  background-color: #df9712;
+  color: #333;
+  font-weight: 30px;
+  border-radius: 20cm;
+  font-size: 1rem;
 }
 
+/* prencimento de pesquisa */
+.preenchimento {
+  text-align: center;
+}
+
+.preenchimento button{
+  background-color: #df9712;
+  color: #333;
+  font-weight: 30px;
+  border-radius: 20cm;
+  font-size: 1rem;
+}
 /* Estilo do rodapé */
 footer {
-  background-color: #a11598;
+  background-color: #df9712;
   color: #fff;
   padding: 20px;
   text-align: center;
-}
-p{
-    text-align: center;
-    border-radius: 1px;
-}
-.preenchimento{
-    text-align: center;
-}
-img{
-  width: 700px;
-  
 }

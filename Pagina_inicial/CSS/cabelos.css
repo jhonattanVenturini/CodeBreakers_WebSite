@@ -1,0 +1,49 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: x-large;
+  font-weight: 300px;
+}
+
+/* Estilo do corpo da página */
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* barra de navegação */
+.container {
+  background-color: #df9712;
+  display: flex;
+  font-size: x-large;
+}
+/* logo */
+.container img {
+  width: 100px;
+  width: 100px;
+  padding: 0.5rem;
+  text-align: left;
+  justify-content: left;
+}
+/* paginas */
+.container a {
+  display: inline-flex;
+  padding: 0.5rem;
+  word-spacing: 100px;
+  color: #fafafa;
+  justify-content: center;
+}
+
+/* Estilo do rodapé */
+footer {
+  background-color: #df9712;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
