@@ -9,57 +9,83 @@
 /* Estilo do corpo da página */
 body {
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  background-color: antiquewhite;
   color: #333;
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  background-color: #fff
 }
-header{
-  background-color: rgb(203, 87, 45);
-}
-a{
-  color: #f0f0f0;
-  text-decoration: none;
-  transition: 0.3s;
-}
-a:houver{
-  opacity: 0.7;
+header {
+  background-color: #fff;
 }
 .logo{
-  font-size: 24px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-}
-nav{
   display: flex;
+  align-items: center;
+}
+.logo img {
+  margin-top: 0.3cm;
+  padding:0.5rem;
+  width: 68px;
+  height: 50px;
+  margin: 0.3cm;
+}
+h1{
+  color: rgb(203, 87, 45);
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+a {
+  color: rgb(203, 87, 45);
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: bold;
+}
+a:houver {
+  opacity: 0.7;
+}
+a:hover{
+  color:#2c0c33; 
+}
+nav {
   justify-content: space-around;
+  display: flex;
   align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   height: 8vh;
 }
-main{
-  background:url("br.jpg") no-repeat center center;
+main {
+  background: url("br.jpg") no-repeat center center;
   background-size: cover;
   height: 92vh;
 }
-.nav-list{
+.nav-list {
   list-style: none;
   display: flex;
 }
 
-.nav-list li{
- letter-spacing: 3px;
- margin-left: 32px;
+.nav-list li {
+  justify-content: space-around;
+  letter-spacing: 3px;
+  margin-left: 50px;
+  padding: 0.3rem;
 }
-.mobile-menu{
+.contatos img{
+  margin-top: 0.3cm;
+  margin-left: 0;
+  margin-right: 0;
+  width: 70px;
+  height: 50px;
+}
+
+.mobile-menu {
   display: none;
   cursor: pointer;
 }
-.mobile-menu div{
+.mobile-menu div {
   width: 32px;
   height: 2px;
-  background: #fff;
+  background:rgb(203, 87, 45); 
   margin: 8px;
   transition: 0.3s;
 }
@@ -72,8 +98,7 @@ main{
     top: 8vh;
     right: 0;
     width: 50vw;
-    height: 92vh;
-    background: rgb(203, 87, 45);
+    background: #fff;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -115,38 +140,21 @@ main{
   transform: rotate(45deg) translate(-5px, -7px);
 }
 
-
-
-
-
-
-
-
-/* carossel */
 #foto{
-  width: 1600px;
-  width: 1583px;
-  border-radius: 10;
-  border: #df9712;
-  font-weight: 300;  
-} 
-
-.card{
-  flex: 1 1 25%; 
-  margin: 10px; 
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  padding: 20px;
-  box-sizing: border-box;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  width:1600px;
+  height:500px;
+  object-fit: cover;
 }
-.produtos button{
-  background-color: #df9712;
-  color: #333;
-  font-weight: 30px;
-  border-radius: 20cm;
-  font-size: 1rem;
+.conteudo h1{
+  color: rgb(220, 64, 7);
+  font-size: xx-large;
+  text-align: left;
+  padding-left: 1rem;
+}
+.conteudo p{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: justify;
 }
 
 /* prencimento de pesquisa */
@@ -154,7 +162,7 @@ main{
   text-align: center;
 }
 
-.preenchimento button{
+.preenchimento button {
   background-color: #df9712;
   color: #333;
   font-weight: 30px;
@@ -163,8 +171,9 @@ main{
 }
 /* Estilo do rodapé */
 footer {
-  background-color:rgb(203, 87, 45) ;
-  color: #f0f0f0;
-  padding: 20px;
+  background-color: #fff;
+  color: rgb(203, 87, 45);
   text-align: center;
+  font-weight: bold;
 }
+
