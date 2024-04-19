@@ -9,27 +9,27 @@
 /* Estilo do corpo da página */
 body {
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  color: #333;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #fff
+  background-color: rgb(223, 212, 198);
+  width: 100%;
 }
 header {
   background-color: #fff;
 }
-.logo{
+.logo {
   display: flex;
   align-items: center;
 }
 .logo img {
   margin-top: 0.3cm;
-  padding:0.5rem;
+  padding: 0.5rem;
   width: 68px;
   height: 50px;
   margin: 0.3cm;
 }
-h1{
+h1 {
   color: rgb(203, 87, 45);
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -44,8 +44,8 @@ a {
 a:houver {
   opacity: 0.7;
 }
-a:hover{
-  color:#2c0c33; 
+a:hover {
+  color: #2c0c33;
 }
 nav {
   justify-content: space-around;
@@ -53,6 +53,7 @@ nav {
   align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   height: 8vh;
+  width: 100%;
 }
 main {
   background: url("br.jpg") no-repeat center center;
@@ -70,7 +71,7 @@ main {
   margin-left: 50px;
   padding: 0.3rem;
 }
-.contatos img{
+.contatos img {
   margin-top: 0.3cm;
   margin-left: 0;
   margin-right: 0;
@@ -85,7 +86,7 @@ main {
 .mobile-menu div {
   width: 32px;
   height: 2px;
-  background:rgb(203, 87, 45); 
+  background: rgb(203, 87, 45);
   margin: 8px;
   transition: 0.3s;
 }
@@ -140,40 +141,133 @@ main {
   transform: rotate(45deg) translate(-5px, -7px);
 }
 
-#foto{
-  width:1600px;
-  height:500px;
+#foto {
+  width: 100%;
   object-fit: cover;
+  height: 350px;
 }
-.conteudo h1{
+.conteudo {
+  background-color: antiquewhite;
+  border-bottom: 3px solid rgb(220, 64, 7);
+  border-radius: 15px;
+}
+.conteudo h1 {
   color: rgb(220, 64, 7);
   font-size: xx-large;
   text-align: left;
-  padding-left: 1rem;
+  padding-left: 10px;
+  width: 98%;
 }
-.conteudo p{
-  padding-left: 1rem;
-  padding-right: 1rem;
+.conteudo p {
   text-align: justify;
+  width: 98%;
+  margin: 10px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  padding: 0.3rem;
+  background-color:aliceblue;
+  color: black;
+}
+.test{
+  display: flex;
+  margin: 15px;
+}
+.test img{
+  width: 50%;
+  object-fit: cover;
+  height: 400px;
+  border-radius: 15px;
+}
+.test h2{
+  width: 100%;
+  display: flex;
+  border-radius: 15px;
+  border: 3px solid rgb(203, 87, 45);
+  background-color: antiquewhite; 
+  padding: 0.3rem;
+  margin-left: 15px;
+}
+.test p{
+  width: 100%;
+  margin-left: 15px;
+  background-color: antiquewhite;
+  border-radius: 15px;
+  text-align: justify;
+  border: 3px solid rgb(203, 87, 45);
+  color:#2c0c33;
+  background-color: antiquewhite;
+}
+
+#produtos {
+  background-color: rgb(203, 87, 45);
+  border-radius: 15px;
+  text-align: center;
+  font-size: 100;
+  color: #fff;
+  margin: 10px;
+}
+.card {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  object-fit: cover;
+}
+.produto1{
+  border: 2px solid rgb(220, 64, 7);
+  border-radius: 15px;
+  margin: 10px;
+  text-align: center;
+  width: 100%;
+}
+.produto1 img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card button{
+  background-color: rgb(220, 64, 7);
+  border-radius: 15px;
+  margin: 5px;
+  font-size: x-large;
+  color: #fff;
+  padding: 0.3rem;
+  border: 2px solid #2c0c33;
+}
+button:hover{
+  background-color:#2c0c33;
 }
 
 /* prencimento de pesquisa */
 .preenchimento {
   text-align: center;
+  width: 100%;
+}
+h3{
+  text-align: center;
+}
+.preenchimento input{
+  border-radius: 15px;
+  padding: 0.1rem;
+  border: 2px solid rgb(220, 64, 7);
+}
+.preenchimento button{
+  background-color: #2c0c33;
+  border-radius: 15px;
+  font-size: x-large;
+  color: #fff;
+  border: 3px solid #2c0c33;
+  margin-top: 5px;
 }
 
-.preenchimento button {
-  background-color: #df9712;
-  color: #333;
-  font-weight: 30px;
-  border-radius: 20cm;
-  font-size: 1rem;
-}
+
+
 /* Estilo do rodapé */
 footer {
-  background-color: #fff;
-  color: rgb(203, 87, 45);
+  background-color: rgb(203, 87, 45);
+  color: #fff;
   text-align: center;
   font-weight: bold;
+  border-top: 3px solid rgb(220, 64, 7);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
-
