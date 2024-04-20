@@ -237,6 +237,12 @@ button:hover{
   background-color:#2c0c33;
 }
 
+.produto1 a{
+  color: #fff;
+}
+a:hover{
+  color: rgb(220, 64, 7);
+}
 /* prencimento de pesquisa */
 .preenchimento {
   text-align: center;
@@ -258,8 +264,6 @@ h3{
   border: 3px solid #2c0c33;
   margin-top: 5px;
 }
-
-
 
 /* Estilo do rodapé */
 footer {
