@@ -139,10 +139,15 @@ main {
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
 }
+
 /* Estilo do rodapé */
+
 footer {
-  background-color: #fff;
-  color: rgb(203, 87, 45);
+  background-color: rgb(203, 87, 45);
+  color: #fff;
   text-align: center;
   font-weight: bold;
+  border-top: 3px solid rgb(220, 64, 7);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }

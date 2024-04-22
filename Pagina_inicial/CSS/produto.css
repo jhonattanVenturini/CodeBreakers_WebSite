@@ -136,6 +136,13 @@ main {
   transform: rotate(45deg) translate(-5px, -7px);
 }
 
+.container {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  margin-top: 50px;
+}
+
 .produto1 {
   border: 2px solid rgb(220, 64, 7);
   border-radius: 15px;
@@ -171,6 +178,3 @@ footer {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-
-
-
