@@ -144,6 +144,65 @@ main {
   width: 100%;
 }
 
+/* vini esteve aqui*/
+.conteudo h3{
+  color: rgb(203, 87, 45);
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+.conteudo_barra1 {
+  width: 200px;
+  height: 3px;
+  content: '';
+  margin-top: 8px;
+  background-color: #f4ab34;
+  margin-left: auto;
+  margin-right: auto;
+}
+.conteudo p {
+  text-align: center;
+  width: 98%;
+  margin: 10px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  padding: 0.3rem;
+  color: black;
+}
+.card {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  object-fit: cover;
+}
+.produto1{
+  border: 2px solid rgb(220, 64, 7);
+  border-radius: 15px;
+  margin: 10px;
+  text-align: center;
+  width: 100%;
+}
+.produto1 img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card button{
+  background-color: rgb(220, 64, 7);
+  border-radius: 15px;
+  margin: 5px;
+  font-size: x-large;
+  color: #fff;
+  padding: 0.3rem;
+  border: 2px solid #2c0c33;
+}
+button:hover{
+  background-color:#2c0c33;
+}
+
+.produto1 a{
+  color: #fff;
+}
 
 
 /* Estilo do rodapé */
