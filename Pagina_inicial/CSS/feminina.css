@@ -13,28 +13,30 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #fff
+  background-color: #fff;
 }
 header {
   background-color: #fff;
 }
-.logo{
+.logo {
   display: flex;
   align-items: center;
 }
 .logo img {
   margin-top: 0.3cm;
-  padding:0.5rem;
+  padding: 0.5rem;
   width: 68px;
   height: 50px;
   margin: 0.3cm;
 }
-h1{
+.logo a {
+  margin-top: 0.3cm;
+}
+h1 {
   color: rgb(203, 87, 45);
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
-
 a {
   color: rgb(203, 87, 45);
   text-decoration: none;
@@ -44,8 +46,8 @@ a {
 a:houver {
   opacity: 0.7;
 }
-a:hover{
-  color:#2c0c33; 
+a:hover {
+  color: #2c0c33;
 }
 nav {
   justify-content: space-around;
@@ -70,7 +72,7 @@ main {
   margin-left: 50px;
   padding: 0.3rem;
 }
-.contatos img{
+.contatos img {
   margin-top: 0.3cm;
   margin-left: 0;
   margin-right: 0;
@@ -85,7 +87,7 @@ main {
 .mobile-menu div {
   width: 32px;
   height: 2px;
-  background:rgb(203, 87, 45); 
+  background: rgb(203, 87, 45);
   margin: 8px;
   transition: 0.3s;
 }
@@ -140,12 +142,12 @@ main {
   transform: rotate(45deg) translate(-5px, -7px);
 }
 
-#foto{
+#foto {
   width: 100%;
 }
 
 /* vini esteve aqui!*/
-.conteudo h3{
+.conteudo h3 {
   color: rgb(203, 87, 45);
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -154,7 +156,7 @@ main {
 .conteudo_barra1 {
   width: 200px;
   height: 3px;
-  content: '';
+  content: "";
   margin-top: 8px;
   background-color: #f4ab34;
   margin-left: auto;
@@ -175,19 +177,19 @@ main {
   width: 100%;
   object-fit: cover;
 }
-.produto1{
+.produto1 {
   border: 2px solid rgb(220, 64, 7);
   border-radius: 15px;
   margin: 10px;
   text-align: center;
   width: 100%;
 }
-.produto1 img{
+.produto1 img {
   width: 100%;
   border-radius: 10px;
 }
 
-.card button{
+.card button {
   background-color: rgb(220, 64, 7);
   border-radius: 15px;
   margin: 5px;
@@ -196,14 +198,13 @@ main {
   padding: 0.3rem;
   border: 2px solid #2c0c33;
 }
-button:hover{
-  background-color:#2c0c33;
+button:hover {
+  background-color: #2c0c33;
 }
 
-.produto1 a{
+.produto1 a {
   color: #fff;
 }
-
 
 /* Estilo do rodapé */
 footer {
