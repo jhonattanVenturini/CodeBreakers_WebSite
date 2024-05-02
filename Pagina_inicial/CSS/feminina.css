@@ -172,10 +172,9 @@ main {
   color: black;
 }
 .card {
-  display: flex;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  width: 100%;
-  object-fit: cover;
+  display: flex; 
+  justify-content: space-around;
+
 }
 .produto1 {
   border: 2px solid rgb(220, 64, 7);
@@ -183,10 +182,15 @@ main {
   margin: 10px;
   text-align: center;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  height: auto; 
 }
 .produto1 img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 100px;
+  height: auto;
 }
 
 .card button {
@@ -201,8 +205,33 @@ main {
 button:hover {
   background-color: #2c0c33;
 }
-
+.produto1 h3, .produto1 p {
+  margin: 10px 0; 
+}
 .produto1 a {
+  color: #fff;
+  margin-top: auto;
+}
+.ver-mais {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.ver-mais button {
+  background-color: rgb(220, 64, 7);
+  border-radius: 15px;
+  font-size: x-large;
+  color: #fff;
+  padding: 0.3rem;
+  border: 2px solid #2c0c33;
+}
+
+.ver-mais button:hover {
+  background-color: #2c0c33;
+}
+
+.ver-mais a {
   color: #fff;
 }
 
