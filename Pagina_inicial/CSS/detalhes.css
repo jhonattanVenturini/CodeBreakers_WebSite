@@ -29,6 +29,9 @@ header {
   height: 50px;
   margin: 0.3cm;
 }
+.logo a{
+  margin-top: 0.3cm;
+}
 h1{
   color: rgb(203, 87, 45);
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;

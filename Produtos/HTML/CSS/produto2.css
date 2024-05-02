@@ -257,20 +257,22 @@
 
   h1.titulo{
 color:rgb(220, 64, 7);
-margin-left: 60px;
+margin-left: 15px;
 font-size: x-large;
 margin-top: 15px;
+margin-right: 500px;
 }
 p.detalhes{
-  margin-left: 60px;
+  margin-left: 10px;
   font-size: large;
+  margin-right: 500px;
 }
 ul{
 list-style: none;
 }
 
 li{
-  margin-left: 60px;
+  margin-left: 10px;
   font-size: large;
 }
 

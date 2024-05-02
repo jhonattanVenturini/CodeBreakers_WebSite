@@ -42,3 +42,13 @@ class MobileNavbar {
     ".nav-list li",
   );
   mobileNavbar.init();
+
+  // função de animação do card
+  function hoverCard(element) {
+    element.classList.add('hovered');
+  }
+  
+  function unhoverCard(element) {
+    element.classList.remove('hovered');
+  }
+  hoverCard.init();
