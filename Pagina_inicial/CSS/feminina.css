@@ -13,7 +13,7 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: antiquewhite;
 }
 header {
   background-color: #fff;
@@ -142,11 +142,19 @@ main {
   transform: rotate(45deg) translate(-5px, -7px);
 }
 
+/* vini esteve aqui!*/
 #foto {
   width: 100%;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  z-index: -1;
 }
-
-/* vini esteve aqui!*/
+.conteudo {
+  margin-top: 100vh;
+    padding: 20px;
+    background: antiquewhite;
+}
 .conteudo h3 {
   color: rgb(203, 87, 45);
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
@@ -166,75 +174,96 @@ main {
   text-align: center;
   width: 98%;
   margin: 10px;
-  border: 1px solid #fff;
   border-radius: 15px;
   padding: 0.3rem;
   color: black;
+  background-color: white;
+  box-shadow: 20px 20px 50px -30px #2c0c33;
 }
-.card {
-  display: flex; 
-  justify-content: space-around;
-
+main.cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  transition: transform 0.3s ease;
 }
-.produto1 {
-  border: 2px solid rgb(220, 64, 7);
-  border-radius: 15px;
-  margin: 10px;
-  text-align: center;
-  width: 100%;
+main.cards{
+  transform: scale(1.0);
+}
+main.cards{
+  cursor: pointer;
+}
+main.cards section.card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
-  height: auto; 
-}
-.produto1 img {
-  width: 100%;
-  border-radius: 100px;
-  height: auto;
-}
-
-.card button {
-  background-color: rgb(220, 64, 7);
-  border-radius: 15px;
-  margin: 5px;
-  font-size: x-large;
-  color: #fff;
-  padding: 0.3rem;
-  border: 2px solid #2c0c33;
-}
-button:hover {
-  background-color: #2c0c33;
-}
-.produto1 h3, .produto1 p {
-  margin: 10px 0; 
-}
-.produto1 a {
-  color: #fff;
-  margin-top: auto;
-}
-.ver-mais {
+  align-items: center;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  background-color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  max-height: 458px;
+  margin-left: 32px;
+  grid-template-columns: repeat(4, 1fr);
+}
+main.cards section.card:first-child {
+  margin-left: 0;
+}
+main.cards section.card img {
+    max-width: 100%; 
+    max-height: 200px;
+    object-fit: cover;
+  }   
+main.cards section.card h3 {
+  font-size: 100%;
+  margin: 10px 0;
 }
 
-.ver-mais button {
+main.cards section.card button {
+  padding: 0.3rem 0.5rem;
+  text-transform: uppercase;
+  border-radius: 32px;
+  border: 0;
+  cursor: pointer;
+  font-weight: 500;
   background-color: rgb(220, 64, 7);
-  border-radius: 15px;
-  font-size: x-large;
-  color: #fff;
-  padding: 0.3rem;
-  border: 2px solid #2c0c33;
 }
-
-.ver-mais button:hover {
+main.cards section.card button:hover {
   background-color: #2c0c33;
 }
-
-.ver-mais a {
+main.cards section.card a {
   color: #fff;
+  border: 0;
+  font-size: 87%;
 }
+main.cards section.card {
+  box-shadow: 20px 20px 50px -30px #2c0c33;
+}
+main.cards section.card.shop {
+  box-shadow: 20px 20px 50px -30px #0c64c2;
+}
+main.cards section.card.about {
+  box-shadow: 20px 20px 50px -30px #c4134b;
+}
+@media screen and (max-width: 720px) {
+  main.cards {
+    flex-direction: column;
+  }
 
+  main.cards section.card {
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+
+  main.cards section.card:last-child {
+    margin-bottom: 0;
+  }
+
+  main.cards section.card button {
+    font-size: 70%;
+  }
+}
 /* Estilo do rodapé */
 footer {
   background-color: rgb(203, 87, 45);
