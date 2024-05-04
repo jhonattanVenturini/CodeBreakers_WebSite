@@ -147,13 +147,16 @@ main {
   height:50%;
   object-fit: cover;
 }
+.conteudo{
+
+}
 h2{
   background-color: rgb(220, 64, 7);
   color: #fff;
 }
 p{
   text-align: justify;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 main.cards {
   display: flex;

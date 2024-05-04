@@ -237,7 +237,7 @@ main.cards section.card button {
   border: 0;
   cursor: pointer;
   font-weight: 500;
-  background-color: rgb(220, 64, 7);
+  background-color: rgb(220, 64, 7);  
 }
 main.cards section.card button:hover {
   background-color: #2c0c33;
