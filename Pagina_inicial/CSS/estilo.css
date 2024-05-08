@@ -173,7 +173,6 @@ main {
   border-radius: 15px;
   padding: 0.3rem;
   color: #2c0c33;
-  columns: 200px 2;
   column-gap: 30px;
 }
 .promoção img {
@@ -279,35 +278,30 @@ main.cards section.card.about {
 .container {
   display: flex;
   text-align: justify;
-  font-size: 50%;
-  background-color: #fff;
-  float: right;
-  border-radius: 8px;
 }
-div.container div.img {
+.container img {
   float: left;
   width: 100%;
   height: 50%;
 }
-div.container section.conteudo {
+.conteudo {
   background-color: #fff;
   float: right;
   overflow: hidden;
-  margin: 25px;
   font-size: 700;
   text-align: justify;
   width: 100%;
-  padding-right: 0.2rem;
   font-weight: 450;
 }
-div.container section.conteudo h1 {
+.container section.conteudo h1 {
   color: rgb(220, 64, 7);
   margin-top: 5px;
   font-size: x-large;
 }
-div.container section.conteudo p {
+.container section.conteudo p {
   font-size: 15px;
-  margin-top: 5px;
+  padding-right: 0;
+  margin-right: 0;
 }
 
 /* Estilo do rodapé */
