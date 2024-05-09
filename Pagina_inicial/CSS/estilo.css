@@ -158,10 +158,10 @@ main {
   object-fit: cover;
   height: 350px;
 }
-.pagina--{
+.pagina-- {
   background-color: white;
   border-radius: 8px;
-  margin: 8px 15px  8px 15px;
+  margin: 8px 15px 8px 15px;
 }
 .pagina-- h1 {
   color: rgb(220, 64, 7);
@@ -204,7 +204,7 @@ main.cards section.card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: center; 
   background-color: white;
   justify-content: center;
   justify-content: space-evenly;
@@ -214,13 +214,17 @@ main.cards section.card {
   margin-left: 32px;
   grid-template-columns: repeat(8, 1fr);
   margin: 50px 25px 25px 25px;
-  transition: transform 06.s ease;
+  transition: transform 03s ease;
 }
-main.cards section.card:hover{
+main.cards section.card:hover {
   transform: scale(1.1);
 }
 main.cards section.card:first-child {
   margin-left: 0;
+}
+main.container section.estrela {
+  margin: 15px 0px 15px 15px;
+  flex-direction: column;
 }
 main.cards section.card .icon {
   width: 240px;
@@ -234,9 +238,8 @@ main.cards section.card h3 {
   font-size: 100%;
   margin: 10px 0;
 }
-main.cards section.card p{
+main.cards section.card p {
   padding-bottom: 0.3rem;
-  
 }
 main.cards section.card button {
   padding: 0.3rem 0.5rem;
