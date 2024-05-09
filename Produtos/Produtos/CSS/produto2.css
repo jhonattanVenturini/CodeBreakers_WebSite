@@ -17,7 +17,9 @@ body {
 }
 header {
   background-color: #fff;
+  position: sticky;
 }
+
 .logo {
   display: flex;
   align-items: center;
@@ -29,12 +31,8 @@ header {
   height: 50px;
   margin: 0.3cm;
 }
-
-.logo a {
-  margin-top: 0.3cm;
-}
 h1 {
-  color: rgb(203, 87, 45);
+  color: rgb(220, 64, 7);
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
@@ -94,7 +92,7 @@ main {
   margin: 8px;
   transition: 0.3s;
 }
-@media (max-width: 999px) {
+@media (max-width: 720px) {
   body {
     overflow-x: hidden;
   }
@@ -144,7 +142,6 @@ main {
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
 }
-
 main.container {
   background-color: white;
   display: flex;
@@ -234,6 +231,7 @@ main.container section.estrela div.seletor button{
 }
 main.container section.estrela div.seletor button:hover{
   background-color: #2c0c33;
+  transform: scale(1.1);
 }
 /* botão quantidade */
 main.container section.estrela div.seletor input {
@@ -267,7 +265,7 @@ main.container section.estrela div.seletor button.comprar{
   color: #fff;
   font-weight: bold;
   transition: background-color 0.3s;
-
+  transition: transform 0.3s ease;
 }
   
 
@@ -285,8 +283,11 @@ div.conteudo p.texto{
   color: black;
   background-color: white;
   box-shadow: 20px 20px 50px -30px #2c0c33;
+  transition: transform 0.3s ease;
 }
-
+div.conteudo p.texto:hover{
+transform: scale(1.1);
+}
 div.conteudo ul{
   text-align: justify;
   width: 89%;
@@ -296,8 +297,11 @@ div.conteudo ul{
   color: black;
   background-color: white;
   box-shadow: 20px 20px 50px -30px #2c0c33;
+  transition: transform 0.3s ease;
 }
-
+div.conteudo ul:hover{
+transform: scale(1.1);
+}
 h2{
   color: rgb(220, 64, 7);
   margin-left: 80px;
