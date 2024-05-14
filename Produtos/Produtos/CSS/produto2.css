@@ -11,13 +11,15 @@
       margin: auto;
       margin-top: 20px;
       margin-bottom: 20px;  
-      display: flex;
   }
   main.container div.icon{
     width: auto;
   }
   main.container div.icon img{
-    width: 100%;
+     width: 100%;
+     height: auto;
+     display: block;
+     overflow: hidden;
   }
   main.container section.estrela{
     display: flex;
