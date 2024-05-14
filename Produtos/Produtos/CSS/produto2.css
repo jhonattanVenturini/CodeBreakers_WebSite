@@ -248,7 +248,7 @@ sup{
   color: rgb(220, 64, 7);
 }
 /* botão de comprar */
-main.container section.estrela div.seletor button.comprar{
+.comprar{
   width: 150px;
   height: auto;
   padding: 0.3rem 0.5rem;
@@ -267,7 +267,56 @@ main.container section.estrela div.seletor button.comprar{
   transition: background-color 0.3s;
   transition: transform 0.3s ease;
 }
-  
+/* Estilo do Popup */
+.popup {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+/* Conteúdo/Box do Popup */
+.popup-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+/* Botão de fechar o popup */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Botões dentro do Popup */
+#confirmPurchase, #cancelPurchase {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  color: white;
+  background-color: #4CAF50; 
+}
+#cancelPurchase {
+  background-color: #f44336; 
+}
+
 
 main.container section.estrela div.seletor button.comprar:hover {
   background-color:#2c0c33;

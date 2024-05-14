@@ -34,59 +34,78 @@
       </ul>
     </nav>
   </header>
-  
+
   <!-- Produto2 VERUM -->
   <main class="container">
     <div class="icon"><img src="/imgs/detalhes.produto2.verum.webp"></div>
     <section class="estrela">
-        <div class="star"><input type="radio" id="cm_star-empty" name="fb" value="" checked/>
-            <label for="cm_star-1"><i class="fa"></i></label>
-            <input type="radio" id="cm_star-1" name="fb" value="1"/>
-            <label for="cm_star-2"><i class="fa"></i></label>
-            <input type="radio" id="cm_star-2" name="fb" value="2"/>
-            <label for="cm_star-3"><i class="fa"></i></label>
-            <input type="radio" id="cm_star-3" name="fb" value="3"/>
-            <label for="cm_star-4"><i class="fa"></i></label>
-            <input type="radio" id="cm_star-4" name="fb" value="4"/>
-            <label for="cm_star-5"><i class="fa"></i></label>
-            <input type="radio" id="cm_star-5" name="fb" value="5"/>
+      <div class="star"><input type="radio" id="cm_star-empty" name="fb" value="" checked />
+        <label for="cm_star-1"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-1" name="fb" value="1" />
+        <label for="cm_star-2"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-2" name="fb" value="2" />
+        <label for="cm_star-3"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-3" name="fb" value="3" />
+        <label for="cm_star-4"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-4" name="fb" value="4" />
+        <label for="cm_star-5"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-5" name="fb" value="5" />
+      </div>
+      <h1> Natura Homem Verum<h1>
+          <p>Verum é a expressão da sua verdade, da sua autenticidade. É a fragrância amadeirada que contrasta notas
+            verdes da folha de violeta e um toque especial da Copaíba, ingrediente da natureza biodiversidade
+            brasileira. Para quem é confiante e vive o hoje.</p>
+          <div class="seletor">
+            <button class="bnt-menos">-</button>
+            <input type="text" value="1">
+            <button class="btn-mais">+</button>
+            <p class="valor">Preço total: <sup>R$</sup><span id="total">119.90</span></p>
           </div>
-        <h1> Natura Homem Verum<h1>
-                <p>Verum é a expressão da sua verdade, da sua autenticidade. É a fragrância amadeirada que contrasta notas verdes da folha de violeta e um toque especial da Copaíba, ingrediente da natureza biodiversidade brasileira. Para quem é confiante e vive o hoje.</p>
-                <div class="seletor">
-                    <button class="bnt-menos">-</button>
-                    <input type="text" value="1">
-                    <button class="btn-mais">+</button>
-                    <p class="valor">Preço total: <sup>R$</sup><span id="total">119.90</span></p>
-                    <button class="comprar"><a href="#"></a> Comprar
-                </div>
     </section>
-</main>
-<div class="conteudo">
+
+    <!-- Botão onclik para compra -->
+   <button class="comprar" onclick="Function(Abrir)">Comprar</button>
+
+    <!-- Popup que abre sobre o produto -->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close">&times;</span>
+        <p>Tem certeza que deseja comprar este produto?</p>
+        <button id="confirmPurchase">Confirmar</button>
+        <button id="cancelPurchase">Cancelar</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- conteudo do produto -->
+  <div class="conteudo">
     <h2> Natura Homem Verum </h2>
-    <p class="texto">Uma moderna combinação de madeiras e notas verdes com um toque camuflado do couro. Para um homem autêntico, confiante e descolado. Para impressionar todos a sua volta. Uma fragrância que te acompanha em momentos especiais e únicos. Pensado para um homem autêntico, moderno e confiante.</p>
+    <p class="texto">Uma moderna combinação de madeiras e notas verdes com um toque camuflado do couro. Para um homem
+      autêntico, confiante e descolado. Para impressionar todos a sua volta. Uma fragrância que te acompanha em momentos
+      especiais e únicos. Pensado para um homem autêntico, moderno e confiante.</p>
 
     <h2>Fragrância</h2>
-    <p class="texto">Fragrância amadeirada que contrasta notas verdes da folha de violeta enriquecida com Copaíba, ingrediente da biodiversidade brasileira.</p>
+    <p class="texto">Fragrância amadeirada que contrasta notas verdes da folha de violeta enriquecida com Copaíba,
+      ingrediente da biodiversidade brasileira.</p>
 
     <h2>Dicas de Uso</h2>
-    <p class="texto">Cada pessoa tem seu jeito único de se perfumar. No entanto, para aproveitar ao máximo o potencial da fragrância masculina, recomendamos aplicá-la em áreas estratégicas, como punho, pescoço e atrás das orelhas. Essas regiões possuem maior circulação sanguínea, o que ajuda a difundir o aroma de maneira mais intensa.</p>
+    <p class="texto">Cada pessoa tem seu jeito único de se perfumar. No entanto, para aproveitar ao máximo o potencial
+      da fragrância masculina, recomendamos aplicá-la em áreas estratégicas, como punho, pescoço e atrás das orelhas.
+      Essas regiões possuem maior circulação sanguínea, o que ajuda a difundir o aroma de maneira mais intensa.</p>
     <h2>Caracteríticas</h2>
     <ul>
-        <li>Produto Vegano</li>
-        <li>Dura até 10h na pele</li>
-        <li>Ocasões especiais</li>
-        <li>Amadeirado intenso</li>
-      </ul>
-      
-    </div>
+      <li>Produto Vegano</li>
+      <li>Dura até 10h na pele</li>
+      <li>Ocasões especiais</li>
+      <li>Amadeirado intenso</li>
+    </ul>
+
+  </div>
 
   <br>
 
-
-
-  <script src="/Pagina_inicial/JS/mobile-navbar.js"></script>
-
+  <script src="/Pagina_inicial/JS/btn-comprar.js"></script>
+  
   <!-- rodape da pagina -->
   <footer>
     <p>&copy; 2024 Natura Cosmeticos. </p>
