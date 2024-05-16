@@ -2,59 +2,99 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Pagina_inicial/CSS/produto.css">
-    <link rel="icon" type="image/x-icon" href="/imgs/unnamed.webp"">
-    <title>Produto 1 </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/imgs/unnamed.webp">
+  <link rel="stylesheet" href="/Produtos/CSS/produto2.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <title>Detalhes</title>
 </head>
 
 <body>
+  <header>
+    <!-- barra de navegação -->
+    <nav>
+      <div class=" logo">
+        <a href="/Pagina_inicial/HTML/index.html"><img src="/imgs/home.logo.png"></a>
+        <h1>Natura</h1>
+      </div>
 
-    <header>
-        <!-- barra de navegação -->
-        <nav>
-            <div class=" logo">
-    <img src="/imgs/kisspng-natura-co-cosmetics-o-boticrio-manufacturing-lo-natura-5b3657c084d2f2.0953609315302880645441.png"
-        alt="">
-    <h1>Natura</h1>
-    </div>
-
-    <div class="mobile-menu">
+      <div class="mobile-menu">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
-    </div>
-    <!-- menu de navegação -->
-    <ul class="nav-list">
+      </div>
+      <!-- menu de navegação -->
+      <ul class="nav-list">
         <li><a href="/Pagina_inicial/HTML/index.html">Home</a></li>
         <li><a href="/Pagina_inicial/HTML/feminina.html">Feminina</a></li>
-        <li><a href="/Pagina_inicial/HTML/detalhes.html">Detalhes</a></li>
         <li><a href="/Pagina_inicial/HTML/cabelos.html">Cabelos</a></li>
-    </ul>
+        <li><a href="/Pagina_inicial/HTML/detalhes.html">Detalhes</a></li>
+      </ul>
     </nav>
-    </header>
+  </header>
+  
+  <!-- Produto 1 natura essence -->
+  <main class="container">
+    <div class="icon"><img src="/imgs/produto1-essence.jpg"></div>
+    <section class="estrela">
+        <div class="star"><input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+            <label for="cm_star-1"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-1" name="fb" value="1"/>
+            <label for="cm_star-2"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-2" name="fb" value="2"/>
+            <label for="cm_star-3"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-3" name="fb" value="3"/>
+            <label for="cm_star-4"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-4" name="fb" value="4"/>
+            <label for="cm_star-5"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-5" name="fb" value="5"/>
+          </div>
+        <h1>Natura Homem Essence<h1>
+                <p>Oferece uma sofisticada fragrância masculina, é esculpida com o coração das madeiras mais nobres como cedro e patchouli, enriquecida com a elegância das notas ambaradas e do cacau, ingrediente natural da biodiversidade brasileira. </p>
+                <div class="seletor">
+                    <button class="bnt-menos">-</button>
+                    <input type="text" value="1">
+                    <button class="btn-mais">+</button>
+                    <p class="valor">Preço total: <sup>R$</sup><span id="total">199.90</span></p>
+                    <button class="comprar"><a href="#"></a> Comprar
+                </div>
 
-    <section class="container">
-        <div class="produto1">
-            <img src="/imgs/kaiaque.jpg" alt="Produto 1">
-            <h3>Nome do Produto 1</h3>
-            <p>Preço: R$ XX,XX</p>
-            <button>Comprar</button>
-        </div>
+            
+              
+
     </section>
-    <br><br><br>
+</main>
+<div class="conteudo">
+    <h2>Natura Homem Essence</h2>
+    <p class="texto">  Natura Homem Essence, Marcante, intenso e sensual com ingredientes naturais da biodiversidade brasileira. Para homens que buscam elegância e sofisticação, Natura Homem Essence envolve e marca presença em quem a usa e aos à sua volta.Oferece uma fragrância intensa com um alto nível de concentração é recomendado para o inverno e noites intermináveis, pois dura muitas horas na pele.</p>
 
-    <!-- integração com javascript -->
-    <script src="/Pagina_inicial/JS/mobile-navbar.js"></script>
+    <h2>Fragrância</h2>
+    <p class="texto">Natura Homem Essence é um deo parfum que exala um aroma amadeirado intenso. Criada para quem busca uma experiência olfativa intensa e memorável.</p>
+   
+    <h2>Dicas de Uso</h2>
+    <p class="texto">Cada pessoa tem seu jeito único de se perfumar. No entanto, para aproveitar ao máximo o potencial da fragrância masculina, recomendamos aplicá-la em áreas estratégicas, como punho, pescoço e atrás das orelhas. Essas regiões possuem maior circulação sanguínea, o que ajuda a difundir o aroma de maneira mais intensa.</p>
+    <h2>Características</h2>
+    <ul>
+        <li>Produto Vegano</li>
+        <li>Dura até 10h na pele</li>
+        <li>Ocasões especiais</li>
+        <li>Amadeirado intenso</li>
+      </ul>
+    </div>
 
-    <!-- rodape da pagina -->
-    <footer>
-        <p>&copy; 2024 Natura Cosmeticos. </p>
-    </footer>
+  <br>
 
 
 
-    </body>
+  <script src="/Pagina_inicial/JS/mobile-navbar.js"></script>
+
+  <!-- rodape da pagina -->
+  <footer>
+    <p>&copy; 2024 Natura Cosmeticos. </p>
+  </footer>
+
+
+</body>
 
 </html>
