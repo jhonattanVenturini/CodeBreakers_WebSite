@@ -1,4 +1,4 @@
-/* Reset de estilos */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +6,6 @@
   font-weight: 300px;
 }
 
-/* Estilo do corpo da página */
 body {
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   line-height: 1.6;
