@@ -85,6 +85,9 @@
   li{
     font-size: 65%;
   }
+  footer{
+    font-size: 65%;
+  }
 }
 
 
@@ -458,8 +461,14 @@ footer {
   background-color: white;
   color: rgb(220, 64, 7);
   text-align: center;
-  font-weight: bold;
   border-top: 0;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+}
+p.rodape{
+  color: black;
+  font-size: x-small;
+  text-align: justify;
+  margin: auto;
+  padding: 2px;
 }
