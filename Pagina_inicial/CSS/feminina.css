@@ -176,7 +176,7 @@ main {
 }
 .conteudo p {
   text-align: justify;
-  width: 98%;
+  
   margin: 10px;
   border-radius: 15px;
   padding: 0.3rem;
@@ -259,6 +259,7 @@ main.cards section.card.about {
     padding: 20px;
     background: antiquewhite;
 }
+
   main.cards {
     flex-direction: column;
   }
