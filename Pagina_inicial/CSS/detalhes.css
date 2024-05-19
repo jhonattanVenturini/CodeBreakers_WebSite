@@ -221,5 +221,7 @@ footer {
     max-height: 100%;
     border-radius: 10px;
   }
-
+  .chato{
+    width: 98px;
+  }
 }
