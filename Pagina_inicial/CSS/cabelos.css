@@ -11,28 +11,31 @@ body {
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   color: #333;
   line-height: 1.6;
-  margin: 0;
-  padding: 0;
   background-color: antiquewhite;
 }
+
 header {
   background-color: #fff;
 }
-.logo{
-  display: flex;
+
+.logo {
+  display:flex;
   align-items: center;
 }
+
 .logo img {
   margin-top: 0.3cm;
-  padding:0.5rem;
+  padding: 0.5rem;
   width: 68px;
   height: 50px;
   margin: 0.3cm;
 }
+
 .logo a {
   margin-top: 0.3cm;
 }
-h1{
+
+h1 {
   color: rgb(203, 87, 45);
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -44,12 +47,15 @@ a {
   transition: 0.3s;
   font-weight: bold;
 }
-a:houver {
+
+a:hover {
   opacity: 0.7;
 }
-a:hover{
-  color:#2c0c33; 
+
+.hover {
+  color: #2c0c33;
 }
+
 nav {
   justify-content: space-around;
   display: flex;
@@ -57,11 +63,12 @@ nav {
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   height: 8vh;
 }
+
 main {
-  background: url("br.jpg") no-repeat center center;
+  background: url("br.jpg") no-repeat center;
   background-size: cover;
-  height: 92vh;
 }
+
 .nav-list {
   list-style: none;
   display: flex;
@@ -73,7 +80,8 @@ main {
   margin-left: 50px;
   padding: 0.3rem;
 }
-.contatos img{
+
+.contatos img {
   margin-top: 0.3cm;
   margin-left: 0;
   margin-right: 0;
@@ -85,37 +93,43 @@ main {
   display: none;
   cursor: pointer;
 }
+
 .mobile-menu div {
   width: 32px;
   height: 2px;
-  background:rgb(203, 87, 45); 
+  background: rgb(203, 87, 45);
   margin: 8px;
   transition: 0.3s;
 }
-@media (max-width: 999px) {
+
+@media (max-width: 720px) {
   body {
     overflow-x: hidden;
   }
+
   .nav-list {
-    position: absolute;
+    position:absolute;
     top: 8vh;
     right: 0;
     width: 50vw;
     background: #fff;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     justify-content: space-around;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
   }
+
   .nav-list li {
     margin-left: 0;
     opacity: 0;
   }
+
   .mobile-menu {
     display: block;
   }
 }
+
 .nav-list.active {
   transform: translateX(0);
 }
@@ -125,6 +139,7 @@ main {
     opacity: 0;
     transform: translateX(50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -142,38 +157,45 @@ main {
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
 }
+
+.p2 {
+  text-align: center;
+  margin: 10px;
+  padding: 0.3rem;
+  color: black;
+}
+
 #foto {
   width: 100%;
   background-size: cover;
   position: fixed;
-  width: 100%;
   z-index: -1;
 }
+
 .conteudo {
   margin-top: 100vh;
   padding: 20px;
   background: antiquewhite;
-
 }
+
 .conteudo h3 {
   color: rgb(203, 87, 45);
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-align: center;
 }
-.conteudo_barra1 {
-width: 200px;
-height: 3px;
-content: "";
-margin-top: 8px;
-background-color: #f4ab34;
-margin-left: auto;
-margin-right: auto;
 
+.conteudo_barra1 {
+  width: 200px;
+  height: 3px;
+  content: "";
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .conteudo p {
-  text-align: justify;
-  width: 98%;
+  text-align:justify;
   margin: 10px;
   border-radius: 15px;
   padding: 0.3rem;
@@ -181,8 +203,9 @@ margin-right: auto;
   background-color: white;
   box-shadow: 20px 20px 50px -30px #2c0c33;
 }
+
 main.cards {
-  display: flex;
+  display: flexbox;
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 0;
@@ -190,32 +213,41 @@ main.cards {
   flex-wrap: nowrap;
   transition: transform 0.3s ease;
 }
-main.cards{
-  transform: scale(1.0);
-}
-main.cards{
+
+main.cards {
   cursor: pointer;
 }
+
 main.cards section.card {
   display: flex;
-  flex-direction: column;
   align-items: center;
   text-align: center;
   background-color: white;
-  padding: 1rem 1.5rem;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding: 1.5rem;
   border-radius: 8px;
   max-height: 458px;
   margin-left: 32px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+  margin: 50px 25px 25px 25px;
+  transition: transform 03s ease;
 }
+
+main.cards section.card:hover {
+  transform: scale(1.1);
+}
+
 main.cards section.card:first-child {
   margin-left: 0;
 }
+
 main.cards section.card img {
-    max-width: 100%; 
-    max-height: 200px;
-    object-fit: cover;
-  }   
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
 main.cards section.card h3 {
   font-size: 100%;
   margin: 10px 0;
@@ -230,24 +262,36 @@ main.cards section.card button {
   font-weight: 500;
   background-color: rgb(220, 64, 7);
 }
+
 main.cards section.card button:hover {
   background-color: #2c0c33;
 }
+
 main.cards section.card a {
   color: #fff;
   border: 0;
   font-size: 87%;
 }
+
 main.cards section.card {
   box-shadow: 20px 20px 50px -30px #2c0c33;
 }
+
 main.cards section.card.shop {
   box-shadow: 20px 20px 50px -30px #0c64c2;
 }
+
 main.cards section.card.about {
   box-shadow: 20px 20px 50px -30px #c4134b;
 }
+
 @media screen and (max-width: 720px) {
+  .conteudo {
+    margin-top: 50vh;
+    padding: 20px;
+    background: antiquewhite;
+  }
+
   main.cards {
     flex-direction: column;
   }
@@ -255,6 +299,7 @@ main.cards section.card.about {
   main.cards section.card {
     margin-left: 0;
     margin-bottom: 32px;
+    flex-direction: column;
   }
 
   main.cards section.card:last-child {
@@ -270,8 +315,7 @@ footer {
   background-color: white;
   color: rgb(220, 64, 7);
   text-align: center;
-  justify-content: center;
-  font-weight: bold;
+  font-weight:bold;
   border-top: 0;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
