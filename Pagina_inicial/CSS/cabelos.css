@@ -11,18 +11,17 @@ body {
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   color: #333;
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
   background-color: antiquewhite;
 }
-
 header {
   background-color: #fff;
 }
-
 .logo {
   display: flex;
   align-items: center;
 }
-
 .logo img {
   margin-top: 0.3cm;
   padding: 0.5rem;
@@ -30,32 +29,26 @@ header {
   height: 50px;
   margin: 0.3cm;
 }
-
 .logo a {
   margin-top: 0.3cm;
 }
-
 h1 {
   color: rgb(203, 87, 45);
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
-
 a {
   color: rgb(203, 87, 45);
   text-decoration: none;
   transition: 0.3s;
   font-weight: bold;
 }
-
-a:hover {
+a:houver {
   opacity: 0.7;
 }
-
 a:hover {
   color: #2c0c33;
 }
-
 nav {
   justify-content: space-around;
   display: flex;
@@ -63,12 +56,10 @@ nav {
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   height: 8vh;
 }
-
 main {
-  background: url("br.jpg") no-repeat center;
+  background: url("br.jpg") no-repeat center center;
   background-size: cover;
 }
-
 .nav-list {
   list-style: none;
   display: flex;
@@ -80,7 +71,6 @@ main {
   margin-left: 50px;
   padding: 0.3rem;
 }
-
 .contatos img {
   margin-top: 0.3cm;
   margin-left: 0;
@@ -93,7 +83,6 @@ main {
   display: none;
   cursor: pointer;
 }
-
 .mobile-menu div {
   width: 32px;
   height: 2px;
@@ -101,12 +90,10 @@ main {
   margin: 8px;
   transition: 0.3s;
 }
-
-@media (max-width: 720px) {
+@media (max-width: 999px) {
   body {
     overflow-x: hidden;
   }
-
   .nav-list {
     position: absolute;
     top: 8vh;
@@ -119,17 +106,14 @@ main {
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
   }
-
   .nav-list li {
     margin-left: 0;
     opacity: 0;
   }
-
   .mobile-menu {
     display: block;
   }
 }
-
 .nav-list.active {
   transform: translateX(0);
 }
@@ -139,7 +123,6 @@ main {
     opacity: 0;
     transform: translateX(50px);
   }
-
   to {
     opacity: 1;
     transform: translateX(0);
@@ -158,44 +141,42 @@ main {
   transform: rotate(45deg) translate(-5px, -7px);
 }
 
-.p2 {
+/* vini esteve aqui!*/
+.p2{
   text-align: center;
   margin: 10px;
   padding: 0.3rem;
   color: black;
 }
-
 #foto {
   width: 100%;
   background-size: cover;
   position: fixed;
   z-index: -1;
 }
-
 .conteudo {
-  margin-top: 100vh;
-  padding: 20px;
-  background: antiquewhite;
+    margin-top: 100vh;
+    padding: 20px;
+    background: antiquewhite;
 }
-
 .conteudo h3 {
   color: rgb(203, 87, 45);
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-align: center;
 }
-
 .conteudo_barra1 {
   width: 200px;
   height: 3px;
   content: "";
   margin-top: 8px;
+  background-color: #f4ab34;
   margin-left: auto;
   margin-right: auto;
 }
-
 .conteudo p {
   text-align: justify;
+  
   margin: 10px;
   border-radius: 15px;
   padding: 0.3rem;
@@ -203,9 +184,8 @@ main {
   background-color: white;
   box-shadow: 20px 20px 50px -30px #2c0c33;
 }
-
 main.cards {
-  display: flexbox;
+  display: flex;
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 0;
@@ -213,15 +193,13 @@ main.cards {
   flex-wrap: nowrap;
   transition: transform 0.3s ease;
 }
-
-main.cards {
+main.cards{
   cursor: pointer;
 }
-
 main.cards section.card {
   display: flex;
   align-items: center;
-  text-align: center;
+  text-align: center; 
   background-color: white;
   justify-content: center;
   justify-content: space-evenly;
@@ -233,21 +211,17 @@ main.cards section.card {
   margin: 50px 25px 25px 25px;
   transition: transform 03s ease;
 }
-
 main.cards section.card:hover {
   transform: scale(1.1);
 }
-
 main.cards section.card:first-child {
   margin-left: 0;
 }
-
 main.cards section.card img {
-  max-width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-}
-
+    max-width: 100%; 
+    max-height: 200px;
+    object-fit: cover;
+  }   
 main.cards section.card h3 {
   font-size: 100%;
   margin: 10px 0;
@@ -260,38 +234,31 @@ main.cards section.card button {
   border: 0;
   cursor: pointer;
   font-weight: 500;
-  background-color: rgb(203, 87, 45);
+  background-color: rgb(220, 64, 7);
 }
-
 main.cards section.card button:hover {
   background-color: #2c0c33;
 }
-
 main.cards section.card a {
   color: #fff;
   border: 0;
   font-size: 87%;
 }
-
 main.cards section.card {
   box-shadow: 20px 20px 50px -30px #2c0c33;
 }
-
 main.cards section.card.shop {
   box-shadow: 20px 20px 50px -30px #0c64c2;
 }
-
 main.cards section.card.about {
   box-shadow: 20px 20px 50px -30px #c4134b;
 }
-
 @media screen and (max-width: 720px) {
-  
   .conteudo {
     margin-top: 50vh;
     padding: 20px;
     background: antiquewhite;
-  }
+}
 
   main.cards {
     flex-direction: column;
