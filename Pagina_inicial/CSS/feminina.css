@@ -156,7 +156,7 @@ main {
 }
 .conteudo {
     margin-top: 100vh;
-    padding: 20px;
+    padding: 35px;
     background: antiquewhite;
 }
 .conteudo h3 {
@@ -187,17 +187,17 @@ main {
 main.cards {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
   margin-bottom: 0;
   justify-content: space-evenly;
   flex-wrap: nowrap;
   transition: transform 0.3s ease;
+  background-color: antiquewhite;
 }
 main.cards{
   cursor: pointer;
 }
 main.cards section.card {
-  display: flex;
+  
   align-items: center;
   text-align: center; 
   background-color: white;

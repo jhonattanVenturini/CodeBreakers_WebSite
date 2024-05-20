@@ -173,7 +173,7 @@ main {
 }
 
 .conteudo {
-  margin-top: 100vh;
+  margin-top: 71vh;
   padding: 20px;
   background: antiquewhite;
 }
@@ -205,13 +205,13 @@ main {
 }
 
 main.cards {
-  display: flexbox;
+  display: flex;
   justify-content: center;
-  margin-top: 50px;
   margin-bottom: 0;
   justify-content: space-evenly;
   flex-wrap: nowrap;
   transition: transform 0.3s ease;
+  background-color: antiquewhite;
 }
 
 main.cards {
@@ -219,7 +219,6 @@ main.cards {
 }
 
 main.cards section.card {
-  display: flex;
   align-items: center;
   text-align: center;
   background-color: white;
@@ -233,7 +232,6 @@ main.cards section.card {
   margin: 50px 25px 25px 25px;
   transition: transform 03s ease;
 }
-
 main.cards section.card:hover {
   transform: scale(1.1);
 }
