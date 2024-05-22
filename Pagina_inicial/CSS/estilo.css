@@ -263,51 +263,70 @@ main.cards section.card.shop {
 main.cards section.card.about {
   box-shadow: 20px 20px 50px -30px rgb(220, 64, 7);
 }
-@media screen and (max-width: 720px) {
-  main.cards {
-    flex-direction: column;
-  }
-
-  main.cards section.card {
-    margin-left: 0;
-    margin-bottom: 32px;
-  }
-
-  main.cards section.card:last-child {
-    margin-bottom: 0;
-  }
-
-  main.cards section.card button {
-    font-size: 70%;
-  }
+@media (min-width:300px) and (max-width:768px){
+.conteudo{
+      margin-bottom: 20px;
 }
+  .pagina-- {
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 0px;
+      padding: 1rem;
+  }
+  .pagina-- h1{
+    text-align: center;
+    font-size: x-large;
+  }
+  .pagina-- p{
+    width: 89%;
+    font-size: 65%;
+  }
+  main.cards {
+    margin-top: 50px;
+    margin: auto;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+  }
+  main.cards section.card {
+    margin: auto;
+   
+  }
+ main.cards section.card .icon{
+  margin-bottom: 0;
+ }
 .container {
-  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  display: block;
+  flex-direction: column;
   text-align: justify;
 }
 .container img {
   float: left;
   width: 100%;
-  height: 50%;
+  height: 100%;
 }
-.conteudo {
-  background-color: #fff;
+.container section.conteudo {
   float: right;
   overflow: hidden;
-  font-size: 700;
+  font-size: 65%;
   text-align: justify;
   width: 100%;
   font-weight: 450;
+  background-color:rgb(243,243,243);
 }
 .container section.conteudo h1 {
   color: rgb(220, 64, 7);
-  margin-top: 5px;
   font-size: x-large;
+  text-align: center;
+  margin-top: 20px;
 }
 .container section.conteudo p {
-  font-size: 15px;
-  padding-right: 0;
-  margin-right: 0;
+  text-align: justify;
+  padding: 1rem;
+  font-size: 100%;
+}
 }
 
 /* Estilo do rodapé */

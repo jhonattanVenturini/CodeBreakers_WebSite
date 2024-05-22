@@ -17,6 +17,11 @@ body {
 }
 header {
   background-color: #fff;
+  width: 100%;
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+  top: 0;
 }
 .logo {
   display: flex;
@@ -149,14 +154,11 @@ main {
   color: black;
 }
 #foto {
-  width: 100%;
-  background-size: cover;
-  position: fixed;
-  z-index: -1;
+ height: 890px;
 }
 .conteudo {
     margin-top: 100vh;
-    padding: 20px;
+    padding: 35px;
     background: antiquewhite;
 }
 .conteudo h3 {
@@ -187,17 +189,17 @@ main {
 main.cards {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
   margin-bottom: 0;
   justify-content: space-evenly;
   flex-wrap: nowrap;
   transition: transform 0.3s ease;
+  background-color: antiquewhite;
 }
 main.cards{
   cursor: pointer;
 }
 main.cards section.card {
-  display: flex;
+  
   align-items: center;
   text-align: center; 
   background-color: white;
@@ -256,12 +258,12 @@ main.cards section.card.about {
 @media screen and (max-width: 720px) {
   .conteudo {
     margin-top: 50vh;
-    padding: 20px;
     background: antiquewhite;
 }
 
   main.cards {
     flex-direction: column;
+
   }
 
   main.cards section.card {
