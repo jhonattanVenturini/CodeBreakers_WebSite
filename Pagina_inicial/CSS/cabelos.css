@@ -1,4 +1,4 @@
-
+/* -- Reset de estilo -- */
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +6,7 @@
   font-weight: 300px;
 }
 
+/* -- Estilo de corpo da página -- */
 body {
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   line-height: 1.6;
@@ -15,15 +16,19 @@ body {
   height: 100vh;
   height: 100%;
 }
+
+/* -- Cabeçalho da página -- */
 header {
   background-color: #fff;
   position: sticky;
 }
 
+/* -- Logo da imagem na barra de menu "natura" -- */
 .logo {
   display:flex;
-  align-items: center;
+  align-items:center;
 }
+
 .logo img {
   margin-top: 0.3cm;
   padding: 0.5rem;
@@ -31,13 +36,32 @@ header {
   height: 50px;
   margin: 0.3cm;
 }
-h1 {
+.logo a {
+  margin-top: 0.3cm;
+}
+
+/* -- Cor e posicionamento do texto "Natura Lumina" -- */
+article.conteudo h3 {
   color: rgb(220, 64, 7);
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   font-weight: bold;
+  text-align: center;
 }
 
-a {
+
+/* -- Conteúdo do parágrafo -- */
+article.conteudo p {
+  text-align: justify;
+  margin: 10px;
+  padding: 0.3rem;
+  color: black;
+  background-color: white;
+  box-shadow: 20px 20px 50px -30px #2c0c33;
+  border-radius: 15px;
+}
+
+/* -- Cor do texto "barra de menu" -- */
+a, h1 {
   color: rgb(203, 87, 45);
   text-decoration: none;
   transition: 0.3s;
@@ -49,6 +73,8 @@ a:hover {
 a:hover {
   color: #2c0c33;
 }
+
+/* -- Barra de navegação "menu" -- */
 nav {
   justify-content: space-around;
   display: flex;
@@ -57,22 +83,27 @@ nav {
   height: 8vh;
   width: 100%;
 }
+
 main {
   background: url("br.jpg") no-repeat center center;
   background-size: cover;
   height: 92vh;
 }
+
+/* -- Estilo de "lista de navegação" -- */
 .nav-list {
   list-style: none;
   display: flex;
 }
 
+/* -- Largura da "lista de navegação -- */
 .nav-list li {
   justify-content: space-around;
   letter-spacing: 3px;
   margin-left: 50px;
   padding: 0.3rem;
 }
+
 .contatos img {
   margin-top: 0.3cm;
   margin-left: 0;
@@ -92,10 +123,13 @@ main {
   margin: 8px;
   transition: 0.3s;
 }
+
+/* -- Media Query -- */
 @media (max-width: 720px) {
   body {
     overflow-x: hidden;
   }
+  
   .nav-list {
     position: absolute;
     top: 8vh;
@@ -112,6 +146,8 @@ main {
     margin-left: 0;
     opacity: 0;
   }
+
+/* -- Fixação barra do menu "mobile" -- */
   .mobile-menu {
     display: block;
   }
@@ -143,16 +179,19 @@ main {
   transform: rotate(45deg) translate(-5px, -7px);
 }
 
+/* -- Posição da foto na página -- */
 #foto {
   width: 100%;
-  object-fit: cover;
-  height: 350px;
+  object-fit:cover;
+  height: 400px;
 }
+
 .conteudo {
-  margin-top: 100vh;
-  padding: 20px;
-  background: antiquewhite;
+  border-bottom: 0;
+  font-size: x-large;
 }
+
+/* -- Largura da imagem da página --*/
 .conteudo img {
   width: 100%;
   object-fit: cover;
@@ -172,7 +211,7 @@ main {
 }
 .pagina-- p {
   text-align: justify;
-  width: 98%;
+  width: 100%;
   margin: 15px 15px 15px 15px;
   padding: 0.3rem;
   color: #2c0c33;
@@ -188,22 +227,20 @@ main {
   margin: 10px;
   font-weight: bold;
 }
-
+/* -- Altura dos cards -- */
 main.cards {
-  display: flex;
+  display:flex;
   justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 0;
-  justify-content: space-evenly;
-  flex-wrap: nowrap;
-  transition: transform 0.3s ease;
+  margin: 15px 15px;
 }
-
 main.cards {
   cursor: pointer;
 }
+
+/* -- Direção dos Cards -- */
 main.cards section.card {
   display: flex;
+  flex-direction:column;
   align-items: center;
   text-align: center; 
   background-color: white;
@@ -212,19 +249,19 @@ main.cards section.card {
   padding: 1.5rem;
   border-radius: 8px;
   max-height: 458px;
-  margin-left: 32px;
+  margin-left: 55px;
   grid-template-columns: repeat(8, 1fr);
-  margin: 50px 25px 25px 25px;
+  margin: 50px 25px 50px 25px;
   transition: transform 03s ease;
 }
 main.cards section.card:hover {
   transform: scale(1.1);
 }
 main.cards section.card:first-child {
-  margin-left: 0;
-}
+  margin-left: 0px;
+  }
 main.container section.estrela {
-  margin: 15px 0px 15px 15px;
+  margin: 15px 15px 15px 15px;
   flex-direction: column;
 }
 main.cards section.card .icon {
@@ -237,7 +274,7 @@ main.cards section.card img {
 }
 main.cards section.card h3 {
   font-size: 100%;
-  margin: 10px 0;
+  margin: 10px ;
 }
 main.cards section.card p {
   padding-bottom: 0.3rem;
@@ -268,54 +305,74 @@ main.cards section.card.shop {
 main.cards section.card.about {
   box-shadow: 20px 20px 50px -30px rgb(220, 64, 7);
 }
-@media screen and (max-width: 720px) {
-  main.cards {
-    flex-direction: column;
-  }
-
-  main.cards section.card {
-    margin-left: 0;
-    margin-bottom: 32px;
-  }
-
-  main.cards section.card:last-child {
-    margin-bottom: 0;
-  }
-
-  main.cards section.card button {
-    font-size: 70%;
-  }
+@media (min-width:300px) and (max-width:768px){
+.conteudo{
+      margin-bottom: 20px;
 }
+  .pagina-- {
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 0px;
+      padding: 1rem;
+  }
+  .pagina-- h1{
+    text-align: center;
+    font-size: x-large;
+  }
+  .pagina-- p{
+    width: 89%;
+    font-size: 65%;
+  }
+  main.cards {
+    margin-top: 50px;
+    margin: auto;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+  }
+  main.cards section.card {
+    margin: auto;
+   
+  }
+ main.cards section.card .icon {
+  margin-bottom: 0;
+ }
+
 .container {
+  width: 100%;
+  margin-top: 20px;
   display: flex;
+  flex-direction: column;
   text-align: justify;
 }
 .container img {
   float: left;
   width: 100%;
-  height: 50%;
+  height: 100%;
 }
-.conteudo {
-  background-color: #fff;
+.container section.conteudo {
   float: right;
   overflow: hidden;
-  font-size: 700;
+  font-size: 65%;
   text-align: justify;
   width: 100%;
   font-weight: 450;
+  background-color:rgb(243,243,243);
 }
 .container section.conteudo h1 {
   color: rgb(220, 64, 7);
-  margin-top: 5px;
   font-size: x-large;
+  text-align: center;
+  margin-top: 20px;
 }
 .container section.conteudo p {
-  font-size: 15px;
-  padding-right: 0;
-  margin-right: 0;
+  text-align: justify;
+  padding: 1rem;
+  font-size: 100%;
+}
 }
 
-/* Estilo do rodapé */
+/* -- Estilo do rodapé -- */
 footer {
   background-color: white;
   color: rgb(220, 64, 7);
