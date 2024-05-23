@@ -252,7 +252,7 @@ main.cards section.card {
   margin-left: 55px;
   grid-template-columns: repeat(8, 1fr);
   margin: 50px 25px 50px 25px;
-  transition: transform 03s ease;
+  transition: transform 0.3s ease;
 }
 main.cards section.card:hover {
   transform: scale(1.1);
