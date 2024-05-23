@@ -1,4 +1,4 @@
-/* Reset de estilos */
+/* -- Reset de estilo -- */
 * {
   margin: 0;
   padding: 0;
@@ -6,21 +6,27 @@
   font-weight: 300px;
 }
 
-/* Estilo do corpo da página */
+/* -- Estilo de corpo da página -- */
 body {
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  color: #333;
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
   background-color: antiquewhite;
+  height: 100vh;
+  height: 100%;
 }
 
+/* -- Cabeçalho da página -- */
 header {
   background-color: #fff;
+  position: sticky;
 }
 
+/* -- Logo da imagem na barra de menu "natura" -- */
 .logo {
-  display: flex;
-  align-items: center;
+  display:flex;
+  align-items:center;
 }
 
 .logo img {
@@ -30,50 +36,67 @@ header {
   height: 50px;
   margin: 0.3cm;
 }
-
 .logo a {
   margin-top: 0.3cm;
 }
 
-h1 {
-  color: rgb(203, 87, 45);
+/* -- Cor e posicionamento do texto "Natura Lumina" -- */
+article.conteudo h3 {
+  color: rgb(220, 64, 7);
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   font-weight: bold;
+  text-align: center;
 }
 
-a {
+
+/* -- Conteúdo do parágrafo -- */
+article.conteudo p {
+  text-align: justify;
+  margin: 10px;
+  padding: 0.3rem;
+  color: black;
+  background-color: white;
+  box-shadow: 20px 20px 50px -30px #2c0c33;
+  border-radius: 15px;
+}
+
+/* -- Cor do texto "barra de menu" -- */
+a, h1 {
   color: rgb(203, 87, 45);
   text-decoration: none;
   transition: 0.3s;
   font-weight: bold;
 }
-
 a:hover {
   opacity: 0.7;
 }
-
 a:hover {
   color: #2c0c33;
 }
 
+/* -- Barra de navegação "menu" -- */
 nav {
   justify-content: space-around;
   display: flex;
   align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   height: 8vh;
+  width: 100%;
 }
 
 main {
-  background: url("br.jpg") no-repeat center;
+  background: url("br.jpg") no-repeat center center;
   background-size: cover;
+  height: 92vh;
 }
 
+/* -- Estilo de "lista de navegação" -- */
 .nav-list {
   list-style: none;
   display: flex;
 }
 
+/* -- Largura da "lista de navegação -- */
 .nav-list li {
   justify-content: space-around;
   letter-spacing: 3px;
@@ -93,7 +116,6 @@ main {
   display: none;
   cursor: pointer;
 }
-
 .mobile-menu div {
   width: 32px;
   height: 2px;
@@ -102,11 +124,12 @@ main {
   transition: 0.3s;
 }
 
+/* -- Media Query -- */
 @media (max-width: 720px) {
   body {
     overflow-x: hidden;
   }
-
+  
   .nav-list {
     position: absolute;
     top: 8vh;
@@ -119,17 +142,16 @@ main {
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
   }
-
   .nav-list li {
     margin-left: 0;
     opacity: 0;
   }
 
+/* -- Fixação barra do menu "mobile" -- */
   .mobile-menu {
     display: block;
   }
 }
-
 .nav-list.active {
   transform: translateX(0);
 }
@@ -139,7 +161,6 @@ main {
     opacity: 0;
     transform: translateX(50px);
   }
-
   to {
     opacity: 1;
     transform: translateX(0);
@@ -158,99 +179,106 @@ main {
   transform: rotate(45deg) translate(-5px, -7px);
 }
 
-.p2 {
-  text-align: center;
-  margin: 10px;
-  padding: 0.3rem;
-  color: black;
-}
-
+/* -- Posição da foto na página -- */
 #foto {
   width: 100%;
-  background-size: cover;
-  position: fixed;
-  z-index: -1;
+  object-fit:cover;
+  height: 400px;
 }
 
 .conteudo {
-  margin-top: 71vh;
-  padding: 20px;
-  background: antiquewhite;
+  border-bottom: 0;
+  font-size: x-large;
 }
 
-.conteudo h3 {
-  color: rgb(203, 87, 45);
-  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  text-align: center;
+/* -- Largura da imagem da página --*/
+.conteudo img {
+  width: 100%;
+  object-fit: cover;
+  height: 350px;
 }
-
-.conteudo_barra1 {
-  width: 200px;
-  height: 3px;
-  content: "";
-  margin-top: 8px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.conteudo p {
-  text-align: justify;
-  margin: 10px;
-  border-radius: 15px;
-  padding: 0.3rem;
-  color: black;
+.pagina-- {
   background-color: white;
-  box-shadow: 20px 20px 50px -30px #2c0c33;
+  border-radius: 8px;
+  margin: 8px 15px 8px 15px;
+}
+.pagina-- h1 {
+  color: rgb(220, 64, 7);
+  font-size: xx-large;
+  text-align: left;
+  width: 98%;
+  margin-left: 15px;
+}
+.pagina-- p {
+  text-align: justify;
+  width: 100%;
+  margin: 15px 15px 15px 15px;
+  padding: 0.3rem;
+  color: #2c0c33;
+  column-gap: 30px;
 }
 
+#produtos {
+  background-color: aliceblue;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 100;
+  color: rgb(220, 64, 7);
+  margin: 10px;
+  font-weight: bold;
+}
+/* -- Altura dos cards -- */
 main.cards {
-  display: flex;
+  display:flex;
   justify-content: center;
-  margin-bottom: 0;
-  justify-content: space-evenly;
-  flex-wrap: nowrap;
-  transition: transform 0.3s ease;
-  background-color: antiquewhite;
+  margin: 15px 15px;
 }
-
 main.cards {
   cursor: pointer;
 }
 
+/* -- Direção dos Cards -- */
 main.cards section.card {
+  display: flex;
+  flex-direction:column;
   align-items: center;
-  text-align: center;
+  text-align: center; 
   background-color: white;
   justify-content: center;
   justify-content: space-evenly;
   padding: 1.5rem;
   border-radius: 8px;
   max-height: 458px;
-  margin-left: 32px;
+  margin-left: 55px;
   grid-template-columns: repeat(8, 1fr);
-  margin: 50px 25px 25px 25px;
+  margin: 50px 25px 50px 25px;
   transition: transform 03s ease;
 }
 main.cards section.card:hover {
   transform: scale(1.1);
 }
-
 main.cards section.card:first-child {
-  margin-left: 0;
+  margin-left: 0px;
+  }
+main.container section.estrela {
+  margin: 15px 15px 15px 15px;
+  flex-direction: column;
 }
-
+main.cards section.card .icon {
+  width: 240px;
+  height: 300px;
+  border-radius: 8px;
+}
 main.cards section.card img {
-  max-width: 100%;
-  max-height: 200px;
-  object-fit: cover;
+  width: 100%;
 }
-
 main.cards section.card h3 {
   font-size: 100%;
-  margin: 10px 0;
+  margin: 10px ;
 }
-
+main.cards section.card p {
+  padding-bottom: 0.3rem;
+}
 main.cards section.card button {
   padding: 0.3rem 0.5rem;
   text-transform: uppercase;
@@ -258,58 +286,93 @@ main.cards section.card button {
   border: 0;
   cursor: pointer;
   font-weight: 500;
-  background-color: rgb(203, 87, 45);
+  background-color: rgb(220, 64, 7);
 }
-
 main.cards section.card button:hover {
   background-color: #2c0c33;
 }
-
 main.cards section.card a {
   color: #fff;
   border: 0;
   font-size: 87%;
 }
-
 main.cards section.card {
   box-shadow: 20px 20px 50px -30px #2c0c33;
 }
-
 main.cards section.card.shop {
-  box-shadow: 20px 20px 50px -30px #0c64c2;
+  box-shadow: 20px 20px 50px -30px rgb(203, 87, 45);
 }
-
 main.cards section.card.about {
-  box-shadow: 20px 20px 50px -30px #c4134b;
+  box-shadow: 20px 20px 50px -30px rgb(220, 64, 7);
 }
-
-@media screen and (max-width: 720px) {
-  
-  .conteudo {
-    margin-top: 50vh;
-    padding: 20px;
-    background: antiquewhite;
+@media (min-width:300px) and (max-width:768px){
+.conteudo{
+      margin-bottom: 20px;
+}
+  .pagina-- {
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 0px;
+      padding: 1rem;
   }
-
+  .pagina-- h1{
+    text-align: center;
+    font-size: x-large;
+  }
+  .pagina-- p{
+    width: 89%;
+    font-size: 65%;
+  }
   main.cards {
+    margin-top: 50px;
+    margin: auto;
     flex-direction: column;
+    width: 50%;
+    height: 50%;
   }
-
   main.cards section.card {
-    margin-left: 0;
-    margin-bottom: 32px;
-    flex-direction: column;
+    margin: auto;
+   
   }
+ main.cards section.card .icon {
+  margin-bottom: 0;
+ }
 
-  main.cards section.card:last-child {
-    margin-bottom: 0;
-  }
-
-  main.cards section.card button {
-    font-size: 70%;
-  }
+.container {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
 }
-/* Estilo do rodapé */
+.container img {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+.container section.conteudo {
+  float: right;
+  overflow: hidden;
+  font-size: 65%;
+  text-align: justify;
+  width: 100%;
+  font-weight: 450;
+  background-color:rgb(243,243,243);
+}
+.container section.conteudo h1 {
+  color: rgb(220, 64, 7);
+  font-size: x-large;
+  text-align: center;
+  margin-top: 20px;
+}
+.container section.conteudo p {
+  text-align: justify;
+  padding: 1rem;
+  font-size: 100%;
+}
+}
+
+/* -- Estilo do rodapé -- */
 footer {
   background-color: white;
   color: rgb(220, 64, 7);
