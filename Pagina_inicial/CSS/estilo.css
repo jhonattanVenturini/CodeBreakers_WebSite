@@ -187,20 +187,6 @@ main {
   text-align: center;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
-  text-align: center; 
-  background-color: white;
-  justify-content: center;
-  justify-content: space-evenly;
-  padding: 1.5rem;
-  border-radius: 8px;
-  max-height: 458px;
-  margin-left: 32px;
-  grid-template-columns: repeat(8, 1fr);
-  margin: 50px 25px 25px 25px;
-  transition: transform 0.3s ease;
-=======
->>>>>>> 387245ad90ff4c112bcbd1e2d5541d7e0d7c9f10
 }
 .cards {
   border: 0;
