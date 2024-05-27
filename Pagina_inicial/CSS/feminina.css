@@ -89,7 +89,7 @@ main {
   margin: 8px;
   transition: 0.3s;
 }
-@media (max-width: 720px) {
+@media (max-width: 999px) {
   body {
     overflow-x: hidden;
   }
@@ -156,17 +156,21 @@ main {
 .pagina-- {
   background-color: white;
   border-radius: 8px;
+  margin: 8px 8px 8px 8px;
+  font-size: clamp(12px, 4vw,32px);
 }
 .pagina-- h3 {
   color: rgb(220, 64, 7);
-  font-size: 50;
+  font-size: x-large;
   text-align: center;
+  margin-left: 20px;
 }
 .pagina-- p {
   text-align: justify;
-  width: 98%;
+  margin: 0px 15px 15px 15px;
+  padding: 0.2rem;
   color: #2c0c33;
-  margin: 0px 15px 0px 15px;
+  font-size: 80;
 }
 .produtos {
   background-color: antiquewhite;
