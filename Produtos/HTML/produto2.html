@@ -34,12 +34,12 @@
       </ul>
     </nav>
   </header>
-
+<main>
   <!-- Produto2 VERUM -->
 
-  <main class="container">
+  <section class="container">
     <div class="icon"><img src="/imgs/detalhes.produto2.verum.webp"></div>
-    <section class="estrela">
+    <div class="estrela">
       <div class="star"><input type="radio" id="cm_star-empty" name="fb" value="" checked />
         <label for="cm_star-1"><i class="fa"></i></label>
         <input type="radio" id="cm_star-1" name="fb" value="1" />
@@ -60,13 +60,20 @@
             <button class="bnt-menos">-</button>
             <input type="text" value="1">
             <button class="btn-mais">+</button>
-            <p class="valor">Preço total: <sup>R$</sup><span id="total">119.90</span></p>
-            <button class="comprar"><a href="#"></a> Comprar
+            <p class="valor">Preço total: <sup>R$</sup><span id="total">199.90</span></p>
+            <button onclick="document.getElementById('Popup').showModal();" class="comprar"><a href=""></a> Comprar </button>
           </div>
-    </section>
-  </main>
+        <dialog id ="Popup">
+          <!-- Conteúdo do popup -->
+          <img src="/imgs/detalhes.popup.check.jpg" alt="">
+          <span></span>
+          <h2>Compra Realizada com Sucesso!</h2>
+          <p>O seu produto foi comprado com sucesso.<br>Obrigado pela sua compra!</p>
+          <button onclick="document.getElementById('Popup').close();">Fechar</button>
+        </dialog>   
+  </section>
   <!-- conteudo do produto -->
-  <div class="conteudo">
+  <section class="conteudo">
     <h2> Natura Homem Verum </h2>
     <p class="texto">Uma moderna combinação de madeiras e notas verdes com um toque camuflado do couro. Para um homem
       autêntico, confiante. Para impressionar todos a sua volta. Uma fragrância que te acompanha em momentos
@@ -89,20 +96,29 @@
       <li>Amadeirado intenso</li>
     </ul>
 
-  </div>
+  </section>
 
 
-  </div>
+ 
   <br>
 
   <script src="/Pagina_inicial/JS/btn-comprar.js"></script>
   
   <!-- rodape da pagina -->
   <footer>
-    <p class="rodape">&COPY;Copyright 2024, (Amanda Piegaia Lima Santos, Jhonattan de Carvalho Romão Venturini, Larissa Trevisani Amaral, Vinícius Pereira Garcia) - Projeto: Desenvolvimento de aplicação front-end para web
-      Advertência: Este Site foi construído para fins didáticos. Dados técnicos, imagens, textos e referências de ordens diversas foram utilizados apenas com o objetivo de possibilitar aos alunos dos cursos de ADS e SI a construção do projeto proposto. As informações aqui exibidas não refletem a realidade. </p>
-  </footer>
+    <p class="copy">&copy;Copyright 2024</p>
+      <ul class="nomes">
+        <li class="nome">Amanda Piegaia Lima Santos</li>
+        <li class="nome">Jhonattan de Carvalho Romão Venturini</li>
+        <li class="nome">Larissa Trevisani Amaral</li>
+        <li class="nome">Vinícius Pereira Garcia</li>
+      </ul>
 
+      <p class="rodape"> Projeto: Desenvolvimento de aplicação front-end para web.
+        <br>
+        Advertência: Este Site foi construído para fins didáticos. Dados técnicos, imagens, textos e referências de ordens diversas foram utilizados apenas com o objetivo de possibilitar aos alunos dos cursos de ADS e SI a construção do projeto proposto. As informações aqui exibidas não refletem a realidade. </p>
+  </footer>
+</main>
 </body>
 
 </html>
