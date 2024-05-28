@@ -241,7 +241,6 @@ section.container div.estrela div.seletor input {
   font-size: small;
   border-radius: 8px;
 }
-
 sup {
   color: rgb(220, 64, 7);
   font-weight: bold;
@@ -281,7 +280,6 @@ section.container div.estrela dialog#Popup{
   justify-content: center;
   border-radius: 32px;
   width: 40%;
-  height:auto;
   border: none;
   padding: 0.5rem;
 

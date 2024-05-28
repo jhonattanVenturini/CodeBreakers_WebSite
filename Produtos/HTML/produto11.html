@@ -34,11 +34,11 @@
       </ul>
     </nav>
   </header>
-  
+  <main>
   <!-- Produto 11 Una Infinito-->
-  <main class="container">
+  <section class="container">
     <div class="icon"><img src="/imgs/detalhes.produto11.una-infinito.webp"></div>
-    <section class="estrela">
+    <div class="estrela">
         <div class="star"><input type="radio" id="cm_star-empty" name="fb" value="" checked/>
             <label for="cm_star-1"><i class="fa"></i></label>
             <input type="radio" id="cm_star-1" name="fb" value="1"/>
@@ -54,19 +54,20 @@
         <h1> Una Infinito<h1>
                 <p>Inspirada nas misteriosas combinações da Galáxia, essa fragrância carrega consigo uma explosão de brilho criada pela combinação da cremosa ameixa negra à notas amadeiradas e cítricas. Intenso e adocicado para combinar com o look da sua maquiagem da Coleção Infinito.</p>
                 <div class="seletor">
-                    <button class="bnt-menos">-</button>
-                    <input type="text" value="1">
-                    <button class="btn-mais">+</button>
                     <p class="valor">Preço total: <sup>R$</sup><span id="total">285.90</span></p>
-                    <button class="comprar"><a href="#"></a> Comprar
+                    <button onclick="document.getElementById('Popup').showModal();" class="comprar"><a href=""></a> Comprar </button>
                 </div>
-
-            
-              
-
-    </section>
-</main>
-<div class="conteudo">
+                <dialog id ="Popup">
+                  <!-- Conteúdo do popup -->
+                  <img src="/imgs/detalhes.popup.check.jpg" alt="">
+                  <span></span>
+                  <h2>Compra Realizada com Sucesso!</h2>
+                  <p>O seu produto foi comprado com sucesso.<br>Obrigado pela sua compra!</p>
+                  <button onclick="document.getElementById('Popup').close();">Fechar</button>
+                </dialog> 
+              </div>
+  </section>
+<section class="conteudo">
     <h2>Una Infinito</h2>
     <p class="texto">Um brilho para realçar a beleza infinita. Inspirada nas combinações da Galáxia, a fragrância Una Infinito carrega consigo uma explosão de brilho criada pela combinação da cremosa ameixa negra ás notas amadeiradas e cítricas, potencializada por um acorde gourmand que se une a doçura do Cumaru, ingredientes da Biodiversidade Brasileira. Perfeito para ocasiões especiais.</p>
     
@@ -84,7 +85,7 @@
         <li>Aroma frutado</li>
       </ul>
 
-    </div>
+</section>
 
   <br>
 
@@ -98,7 +99,7 @@
       Advertência: Este Site foi construído para fins didáticos. Dados técnicos, imagens, textos e referências de ordens diversas foram utilizados apenas com o objetivo de possibilitar aos alunos dos cursos de ADS e SI a construção do projeto proposto. As informações aqui exibidas não refletem a realidade. </p>
   </footer>
 
-
+</main>
 </body>
 
 </html>

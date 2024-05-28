@@ -34,11 +34,11 @@
       </ul>
     </nav>
   </header>
-  
+  <main>
   <!-- Produto 5 natura homem Sagaz-->
-  <main class="container">
+  <section class="container">
     <div class="icon"><img src="/imgs/detalhes.produto5.sagaz.jpg"></div>
-    <section class="estrela">
+    <div class="estrela">
         <div class="star"><input type="radio" id="cm_star-empty" name="fb" value="" checked/>
             <label for="cm_star-1"><i class="fa"></i></label>
             <input type="radio" id="cm_star-1" name="fb" value="1"/>
@@ -54,19 +54,20 @@
         <h1>Natura Homem Sagaz<h1>
                 <p>Apresentamos a você a linha Natura Homem Sagaz, criada especificamente para o homem moderno que valoriza a sua individualidade. Esta linha completa de perfumaria e cuidados pessoais permite que cada homem se cuide à sua maneira.</p>
                 <div class="seletor">
-                    <button class="bnt-menos">-</button>
-                    <input type="text" value="1">
-                    <button class="btn-mais">+</button>
                     <p class="valor">Preço total: <sup>R$</sup><span id="total">179.90</span></p>
-                    <button class="comprar"><a href="#"></a> Comprar
+                    <button onclick="document.getElementById('Popup').showModal();" class="comprar"><a href=""></a> Comprar </button>
                 </div>
-
-            
-              
-
-    </section>
-</main>
-<div class="conteudo">
+                <dialog id ="Popup">
+                  <!-- Conteúdo do popup -->
+                  <img src="/imgs/detalhes.popup.check.jpg" alt="">
+                  <span></span>
+                  <h2>Compra Realizada com Sucesso!</h2>
+                  <p>O seu produto foi comprado com sucesso.<br>Obrigado pela sua compra!</p>
+                  <button onclick="document.getElementById('Popup').close();">Fechar</button>
+                </dialog>    
+              </div>
+  </section>
+<section class="conteudo">
     <h2>Natura Homem Sagaz</h2>
     <p class="texto">Natura Homem Sagaz é perfeito para o homem que sabe o que quer. Com fragrância intensa e amadeirada, combina perfeitamente com ocasiões especiais. Natura Homem Sagaz, é ideal para você que sabe o que quer. Uma combinação moderna de notas licorosas e madeiras quentes com um toque apimentado, que proporcionam durabilidade e ousadia à fragrância.</p>
 
@@ -84,7 +85,7 @@
         <li>Amadeirado intenso</li>
       </ul>
 
-    </div>
+</section>
 
   <br>
 
@@ -98,7 +99,7 @@
       Advertência: Este Site foi construído para fins didáticos. Dados técnicos, imagens, textos e referências de ordens diversas foram utilizados apenas com o objetivo de possibilitar aos alunos dos cursos de ADS e SI a construção do projeto proposto. As informações aqui exibidas não refletem a realidade. </p>
   </footer>
 
-
+</main>
 </body>
 
 </html>
