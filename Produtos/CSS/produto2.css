@@ -5,89 +5,6 @@
   font-size: x-large;
   font-weight: 300px;
 }
-@media (min-width: 300px) and (max-width: 768px) {
-  main.container {
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 0;
-  }
-  main.container div.icon {
-    width: 200px;
-    justify-content: center;
-    gap: 10px;
-  }
-  main.container div.icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 2px solid black;
-    transition: all ease-in 0.5s;
-  }
-  main.container div.icon img:hover {
-    width: 200px;
-    transform: scale(1.1);
-    transition: all ease-in 0.5s;
-  }
-  main.container section.estrela {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    object-fit: cover;
-    font-size: 5%;
-    flex-direction: column;
-  }
-  main.container section.estrela h1 {
-    width: auto;
-  }
-  main.container section.estrela p {
-    flex-direction: column;
-    font-size: 65%;
-    width: 90%;
-  }
-  main.container section.estrela div.seletor {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  main.container section.estrela div.seletor p.valor {
-    display: inline-block;
-    align-items: center;
-    justify-items: center;
-    font-size: 65%;
-  }
-  sup {
-    font-size: 90%;
-  }
-  span {
-    font-size: 8;
-  }
-  main.container section.estrela div.seletor button {
-    width: 100%;
-    padding: 5px;
-  }
-  main.container section.estrela div.seletor button.comprar {
-    align-items: center;
-    justify-content: center;
-  }
-  div.conteudo {
-    margin: auto;
-    display: block;
-    flex-direction: column;
-    width: 89%;
-  }
-  p.texto {
-    font-size: 65%;
-  }
-  li {
-    font-size: 65%;
-  }
-  footer {
-    font-size: 65%;
-  }
-}
-
 /* Estilo do corpo da página */
 body {
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
@@ -162,7 +79,6 @@ main {
   width: 70px;
   height: 50px;
 }
-
 .mobile-menu {
   display: none;
   cursor: pointer;
@@ -174,7 +90,7 @@ main {
   margin: 8px;
   transition: 0.3s;
 }
-@media (max-width: 720px) {
+@media (max-width: 999px) {
   body {
     overflow-x: hidden;
   }
@@ -224,7 +140,7 @@ main {
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
 }
-main.container {
+section.container {
   background-color: white;
   display: flex;
   text-align: justify;
@@ -235,8 +151,9 @@ main.container {
   border-radius: 8px;
   box-shadow: 20px 20px 50px -30px #2c0c33;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  font-size: clamp(12px,4vw,32px);
 }
-main.container section.estrela {
+section.container div.estrela {
   flex-direction: column;
   padding: 8px;
 }
@@ -254,7 +171,7 @@ div.star {
 .estrela input[type="radio"]:checked ~ label i.fa:before {
   color: #ccc;
 }
-main.container div.icon {
+section.container div.icon {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -262,41 +179,42 @@ main.container div.icon {
   float: left;
   border-radius: 8px;
 }
-main.container div.icon img {
+section.container div.icon img {
   object-fit: cover;
   height: 100%;
   transition: transform 0.3s ease;
 }
-main.container div.icon img:hover {
+section.container div.icon img:hover {
   transform: scale(1.1);
 }
-main.container section.estrela h1 {
+section.container div.estrela h1 {
   color: rgb(220, 64, 7);
   text-align: justify;
   text-align: center;
   padding: 0;
 }
 
-main.container section.estrela p {
+section.container div.estrela p {
   color: black;
   margin-top: 5px;
   text-align: justify;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   font-weight: 450;
   padding: 0 1rem;
+  font-size: clamp(12px,4vw,32px);
 }
 /* div completa */
-main.container section.estrela div.seletor {
+section.container div.estrela div.seletor {
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 /* valor */
-main.container section.estrela div.seletor p.valor {
+section.container div.estrela div.seletor p.valor {
   text-align: center;
 }
 /* seletor */
-main.container section.estrela div.seletor button {
+section.container div.estrela div.seletor button {
   text-transform: uppercase;
   background-color: rgb(220, 64, 7);
   color: white;
@@ -309,12 +227,12 @@ main.container section.estrela div.seletor button {
   width: auto;
   border-radius: 8px;
 }
-main.container section.estrela div.seletor button:hover {
+section.container div.estrela div.seletor button:hover {
   background-color: #2c0c33;
   transform: scale(1.1);
 }
 /* botão quantidade */
-main.container section.estrela div.seletor input {
+section.container div.estrela div.seletor input {
   width: 35px;
   height: 25px;
   padding-top: 2px;
@@ -328,60 +246,56 @@ sup {
   color: rgb(220, 64, 7);
 }
 /* botão de comprar */
-main.container section.estrela div.seletor button.comprar {
-  text-transform: uppercase;
-  border-radius: 32px;
-  border: 0;
+section.container div.estrela div.seletor button.comprar {
   cursor: pointer;
-  background-color: rgb(220, 64, 7);
   justify-content: center;
+  text-align: center;
+  padding-top: 0;
   color: #fff;
   font-size: 14px;
+  font-weight: bold;
   transition: background-color 0.3s;
   transition: transform 0.3s ease;
+  background-color: rgb(220, 64, 7);
+  border: 0;
+  border-radius: 8px;
 }
-main.container section.estrela div.seletor button.comprar:hover {
+section.container div.estrela div.seletor button.comprar:hover {
   background-color: #2c0c33;
-}
-main.container section.estrela div.seletor button.comprar a {
-  color: #fff;
-}
-main.container section.estrela div.seletor button.comprar a:hover{
   color: rgb(203, 87, 45);
 }
-
-main.container section.estrela dialog::backdrop{
+section.container div.estrela dialog::backdrop{
   background-color: rgb(119, 119, 119,0.4);
 }
-main.container section.estrela dialog{
+section.container div.estrela dialog{
   align-items: center;
   margin: auto;
 }
-main.container section.estrela dialog img{
+section.container div.estrela dialog img{
  width: 40%;
 }
-main.container section.estrela dialog#Popup{
+section.container div.estrela dialog#Popup{
   background-color: white;
   justify-content: center;
   border-radius: 32px;
   width: 40%;
-  height: 400px;
+  height:auto;
   border: none;
   padding: 0.5rem;
 
 }
-main.container section.estrela dialog#Popup h2{
+section.container div.estrela dialog#Popup h2{
   margin: auto;
   color: orangered;
   font-size: xx-large;
 }
-main.container section.estrela dialog#Popup p{
+section.container div.estrela dialog#Popup p{
   margin: auto;
   color: black;
   font-size: 70%;
   text-align: center;
 }
-main.container section.estrela dialog#Popup button{
+section.container div.estrela dialog#Popup button{
   border-radius: 32px;
   border: 0;
   cursor: pointer;
@@ -395,19 +309,19 @@ main.container section.estrela dialog#Popup button{
   width: 20%;
   margin-top: 20px;
 }
-main.container section.estrela dialog#Popup button:hover{
+section.container div.estrela dialog#Popup button:hover{
   background-color: #2c0c33;
 }
 
 
 /* conteudo site  */
-div.conteudo {
+section.conteudo {
   display: block;
   justify-content: center;
   width: 89%;
   margin: auto;
 }
-div.conteudo p.texto {
+section.conteudo p.texto {
   text-align: justify;
   align-items: center;
   width: 100%;
@@ -418,10 +332,10 @@ div.conteudo p.texto {
   box-shadow: 20px 20px 50px -30px #2c0c33;
   transition: transform 0.3s ease;
 }
-div.conteudo p.texto:hover {
+section.conteudo p.texto:hover {
   transform: scale(1.1);
 }
-div.conteudo ul {
+section.conteudo ul {
   text-align: justify;
   width: 100%;
   margin: auto;
@@ -432,7 +346,7 @@ div.conteudo ul {
   box-shadow: 20px 20px 50px -30px #2c0c33;
   transition: transform 0.3s ease;
 }
-div.conteudo ul:hover {
+section.conteudo ul:hover {
   transform: scale(1.1);
 }
 h2 {
@@ -455,17 +369,31 @@ li {
 }
 
 footer {
+  width: 100%;
+  height: auto;
   background-color: white;
   color: rgb(220, 64, 7);
-  text-align: center;
   border-top: 0;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  display: block;
 }
-p.rodape {
+p.copy{
+
+  text-align: center;
+  font-size: large;
+}
+ul.nomes{
+  padding: 0;
   color: black;
-  font-size: x-small;
+}
+li.nome{ columns: 1;
+  font-size: large;
+  color: black;
+}
+p.rodape{
+  font-size: large;
   text-align: justify;
-  margin: auto;
-  padding: 2px;
+  color: black;
+  padding: 0;
 }
