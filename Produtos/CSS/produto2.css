@@ -127,7 +127,7 @@ main {
     flex-direction: column;
     border-top-left-radius: 8px;
   }
-  .container img {
+  .container img{
     width: 100%;
     max-width: 100%;
   }
@@ -138,6 +138,12 @@ main {
   }
   .container div.estrela{
     flex-direction: column;
+  }
+  .container div.star{
+    flex-direction: column;
+  }
+  dialog{
+    margin: auto;
   }
 }
 .nav-list.active {
@@ -211,6 +217,7 @@ section.container div.icon {
 }
 section.container div.icon img {
   object-fit: cover;
+  width: 100%;
   height: 100%;
   transition: transform 0.3s ease;
 }
