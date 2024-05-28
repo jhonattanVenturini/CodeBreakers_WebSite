@@ -14,14 +14,17 @@ body {
   height: 100vh;
   height: 100%;
 }
+
 header {
   background-color: #fff;
   position: sticky;
 }
+
 .logo {
   display: flex;
   align-items: center;
 }
+
 .logo img {
   margin-top: 0.3cm;
   padding: 0.5rem;
@@ -29,6 +32,7 @@ header {
   height: 50px;
   margin: 0.3cm;
 }
+
 h1 {
   color: rgb(220, 64, 7);
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
@@ -41,12 +45,15 @@ a {
   transition: 0.3s;
   font-weight: bold;
 }
+
 a:houver {
   opacity: 0.7;
 }
+
 a:hover {
   color: #2c0c33;
 }
+
 nav {
   justify-content: space-around;
   display: flex;
@@ -55,11 +62,13 @@ nav {
   height: 8vh;
   width: 100%;
 }
+
 main {
   background: url("br.jpg") no-repeat center center;
   background-size: cover;
   height: 92vh;
 }
+
 .nav-list {
   list-style: none;
   display: flex;
@@ -71,6 +80,7 @@ main {
   margin-left: 50px;
   padding: 0.3rem;
 }
+
 .contatos img {
   margin-top: 0.3cm;
   margin-left: 0;
@@ -83,6 +93,7 @@ main {
   display: none;
   cursor: pointer;
 }
+
 .mobile-menu div {
   width: 32px;
   height: 2px;
@@ -90,10 +101,12 @@ main {
   margin: 8px;
   transition: 0.3s;
 }
+
 @media (max-width: 999px) {
   body {
     overflow-x: hidden;
   }
+
   .nav-list {
     position: absolute;
     top: 8vh;
@@ -106,14 +119,17 @@ main {
     transform: translateX(100%);
     transition: transform 0.2s ease-in;
   }
+
   .nav-list li {
     margin-left: 0;
     opacity: 0;
   }
+
   .mobile-menu {
     display: block;
   }
 }
+
 .nav-list.active {
   transform: translateX(0);
 }
@@ -123,11 +139,13 @@ main {
     opacity: 0;
     transform: translateX(50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
   }
 }
+
 .mobile-menu.active .line1 {
   transform: rotate(-45deg) translate(-8px, 8px);
 }
@@ -145,20 +163,23 @@ main {
   object-fit: cover;
   height: 350px;
 }
+
 .conteudo {
   border-bottom: 0;
   font-size: x-large;
 }
+
 .conteudo img {
   width: 100%;
   object-fit: cover;
   height: 350px;
 }
+
 .pagina-- {
   background-color: white;
   border-radius: 8px;
   margin: 8px 8px 8px 0px;
-  font-size: clamp(12px, 4vw,32px);
+  font-size: clamp(12px, 4vw, 32px);
 }
 
 .pagina-- h1 {
@@ -168,11 +189,13 @@ main {
   width: 98%;
   margin-left: 45px;
 }
+
 .pagina-- p {
   text-align: justify;
   justify-content: center;
-  margin:0px 15px 0px 50px;
+  margin: 0px 15px 0px 50px;
 }
+
 .produtos {
   background-color: antiquewhite;
   columns: 4;
@@ -180,6 +203,7 @@ main {
   flex-wrap: wrap;
   margin-top: 30px;
 }
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -188,6 +212,7 @@ main {
   justify-content: center;
   align-items: center;
 }
+
 .cards {
   border: 0;
   justify-content: space-between;
@@ -202,49 +227,61 @@ main {
   column-gap: 10px;
   box-shadow: 20px 20px 50px -30px #2c0c33;
 }
+
 .cards:hover {
   transform: scale(1.1);
 }
+
 .cards img {
   width: 300px;
   height: 300px;
   object-fit: cover;
 }
+
 .cards p {
   color: red;
   text-decoration: line-through;
 }
+
 #p2 {
   font-weight: none;
   text-decoration: none;
   color: black;
 }
+
 sup {
   color: rgb(220, 64, 7);
   font-size: 70%;
   font-weight: bold;
 }
+
 .cards button {
   background-color: rgb(220, 64, 7);
   border: 0;
   border-radius: 8px;
   padding: 0.2rem;
 }
+
 .cards button:hover {
   background-color: #2c0c33;
 }
+
 .cards a {
   color: #fff;
 }
+
 .cards a:hover {
   color: rgb(203, 87, 45);
 }
+
 .cards.shop {
   box-shadow: 20px 20px 50px -30px rgb(203, 87, 45);
 }
+
 .cards.about {
   box-shadow: 20px 20px 50px -30px rgb(220, 64, 7);
 }
+
 .pg2-- {
   background-color: #fff;
   border-radius: 8px;
@@ -253,6 +290,7 @@ sup {
   margin: 50px 8px 8px 8px;
   padding: 1rem;
 }
+
 .pg2-- img {
   width: 50%;
   height: 50%;
@@ -262,11 +300,30 @@ sup {
 
 footer {
   background-color: white;
-  color: rgb(220, 64, 7);
+  color: #2c0c33;
   text-align: center;
-  font-weight: bold;
   border-top: 0;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
   position: absolute;
+  margin: 15px;
+  border-top-left-radius: 35px;
+}
+footer p.copy {
+  background-color: rgb(203, 87, 45);
+  color: #fff;
+  font-weight: bold;
+}
+footer ul.nomes {
+  float: left;
+  justify-content: left;
+  text-align: left;
+}
+footer li.nome{
+  color: black;
+  font-size: 70%;
+}
+footer p.rodape{
+color: black;
+font-size: 65%;
+text-align: justify;
+padding: 1rem;
 }

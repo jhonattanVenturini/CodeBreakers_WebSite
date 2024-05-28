@@ -244,6 +244,8 @@ section.container div.estrela div.seletor input {
 
 sup {
   color: rgb(220, 64, 7);
+  font-weight: bold;
+  font-size: 65%;
 }
 /* botão de comprar */
 section.container div.estrela div.seletor button.comprar {
