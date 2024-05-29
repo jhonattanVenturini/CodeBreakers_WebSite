@@ -249,3 +249,106 @@ sup {
   box-shadow: 20px 20px 50px -30px rgb(220, 64, 7);
 }
 
+footer {
+  width: 100%;
+  height: auto;
+  min-height: fit-content;
+  background-color:#fff;
+  display: flex;
+  justify-content: center;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  }
+ 
+  footer h2 {
+  text-align: center;
+  color: rgb(203, 87, 45);
+  padding: 1rem;
+  }
+ 
+  .row {
+  display: flex;
+  flex: wrap;
+  gap: 10px;
+  text-align: center; 
+  height: 350px;
+  }
+ 
+  .container-footer {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+  }
+
+  footer ul.nomes {
+  color:black;
+  list-style: none;
+  display: block;
+  justify-content: center;
+  align-items: center;
+ }
+ footer li.nome{
+  width: 200px;
+  color: black;
+  font-weight: bold;
+  text-align: justify;
+  font-size: 65%;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+ }
+ footer li.nome:hover{
+  color: rgb(203, 87, 45);
+ }
+ footer div.linha-vertical {
+  border-left: 3px solid rgb(203, 87, 45);
+  height: 330px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+ footer p{
+  margin-inline: 10px; 
+  text-align: justify;
+  display: block;
+  flex-wrap: wrap;
+  font-weight: bold;
+  font-size: 65%;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+ }
+ footer p:hover{
+  color: rgb(203, 87, 45);
+ }
+ 
+  @media screen and (max-width: 695px) {
+ 
+  .row {
+  display: flex;
+  flex: wrap;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+   padding: 0;
+  }
+  footer h2{
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  }
+  ul.nomes{
+  display: none;
+  margin-left: -20px;
+  padding: 0;
+  }
+  div.linha-vertical{
+  display: none;
+  }
+}
+
+
