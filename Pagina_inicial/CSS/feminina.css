@@ -277,6 +277,7 @@ footer {
   flex-direction: column;
   flex-wrap: wrap;
   padding-bottom: 1rem;
+  background-color: #fff;
   }
 
   footer ul.nomes {
@@ -285,16 +286,17 @@ footer {
   display: block;
   justify-content: center;
   align-items: center;
+  margin-left: 0.2rem;
  }
  footer li.nome{
-  width: 200px;
+  width: 170px;
   color: black;
   font-weight: bold;
   text-align: justify;
   font-size: 65%;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  padding:0;
   cursor: pointer;
   transition: 0.2s all ease-in-out;
  }
@@ -321,29 +323,18 @@ footer {
  footer p:hover{
   color: rgb(203, 87, 45);
  }
- 
-  @media screen and (max-width: 695px) {
- 
+ @media screen and (max-width: 695px) {
+
   .row {
   display: flex;
   flex: wrap;
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
   align-items: center;
   justify-content: center;
-   padding: 0;
-  }
-  footer h2{
-  text-align: center;
-  margin: auto;
   padding: 0;
-  }
-  ul.nomes{
-  display: none;
-  margin-left: -20px;
-  padding: 0;
-  }
-  div.linha-vertical{
-  display: none;
   }
 }
+ 
+
+
