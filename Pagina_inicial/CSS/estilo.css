@@ -128,6 +128,20 @@ main {
   .mobile-menu {
     display: block;
   }
+  .pagina-- h1{
+    text-align: center;
+  }
+  .pg2-- {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    flex-direction: column;
+  }
+  .pg2-- img {
+    max-width: 90%;
+    max-height: 100%;
+    margin: 15px 15px 15px 15px;
+  }
 }
 
 .nav-list.active {
@@ -165,7 +179,6 @@ main {
 }
 
 .conteudo {
-  border-bottom: 0;
   font-size: x-large;
 }
 
@@ -178,22 +191,22 @@ main {
 .pagina-- {
   background-color: white;
   border-radius: 8px;
-  margin: 8px 8px 8px 0px;
   font-size: clamp(12px, 4vw, 32px);
+  margin: 15px 15px 15px 15px;
+  padding: 0.2rem;
 }
 
 .pagina-- h1 {
   color: rgb(220, 64, 7);
   font-size: x-large;
-  text-align: left;
   width: 98%;
-  margin-left: 45px;
+  margin-left: 25px;
 }
 
 .pagina-- p {
   text-align: justify;
   justify-content: center;
-  margin: 0px 15px 0px 50px;
+  padding: 1rem;
 }
 
 .produtos {
@@ -287,58 +300,70 @@ sup {
   border-radius: 8px;
   justify-content: center;
   text-align: justify;
-  margin: 50px 8px 8px 8px;
+  margin: 15px 0px 15px 15px;
+  align-items: center;
+  text-align: justify;
   padding: 1rem;
 }
-
+.pg2-- h1 {
+  padding: auto;
+  margin-left: 25px;
+}
+.pg2-- p {
+  flex-direction: column;
+  padding: 1rem;
+}
 .pg2-- img {
-  width: 50%;
-  height: 50%;
-  float: left;
+  max-width: 97%;
+  max-height: 100%;
+  border-radius: 8px;
   background-color: #fff;
+  margin: 15px 15px 15px 15px;
 }
 
 footer {
   width: 100%;
   height: auto;
   min-height: fit-content;
-  background-color:#fff;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;
-  }
- 
-  footer h2 {
+  margin: 15px 15px 15px 0px;
+  padding: 1rem;
+}
+
+footer h2 {
   text-align: center;
   color: rgb(203, 87, 45);
   padding: 1rem;
-  }
- 
-  .row {
+}
+
+.row {
   display: flex;
   flex: wrap;
   gap: 10px;
-  text-align: center; 
+  text-align: center;
   height: 350px;
-  }
- 
-  .container-footer {
+}
+
+.container-footer {
   width: 500px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding-bottom: 1rem;
-  }
+}
 
-  footer ul.nomes {
-  color:black;
+footer ul.nomes {
+  color: black;
   list-style: none;
   display: block;
   justify-content: center;
   align-items: center;
- }
- footer li.nome{
+}
+footer li.nome {
   width: 200px;
   color: black;
   font-weight: bold;
@@ -349,19 +374,19 @@ footer {
   padding: 0;
   cursor: pointer;
   transition: 0.2s all ease-in-out;
- }
- footer li.nome:hover{
+}
+footer li.nome:hover {
   color: rgb(203, 87, 45);
- }
- footer div.linha-vertical {
+}
+footer div.linha-vertical {
   border-left: 3px solid rgb(203, 87, 45);
   height: 330px;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
- footer p{
-  margin-inline: 10px; 
+footer p {
+  margin-inline: 10px;
   text-align: justify;
   display: block;
   flex-wrap: wrap;
@@ -369,33 +394,32 @@ footer {
   font-size: 65%;
   cursor: pointer;
   transition: 0.2s all ease-in-out;
- }
- footer p:hover{
+}
+footer p:hover {
   color: rgb(203, 87, 45);
- }
- 
-  @media screen and (max-width: 695px) {
- 
+}
+
+@media screen and (max-width: 695px) {
   .row {
-  display: flex;
-  flex: wrap;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-   padding: 0;
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
   }
-  footer h2{
-  text-align: center;
-  margin: auto;
-  padding: 0;
+  footer h2 {
+    text-align: center;
+    margin: auto;
+    padding: 0;
   }
-  ul.nomes{
-  display: none;
-  margin-left: -20px;
-  padding: 0;
+  ul.nomes {
+    display: none;
+    margin-left: -20px;
+    padding: 0;
   }
-  div.linha-vertical{
-  display: none;
+  div.linha-vertical {
+    display: none;
   }
 }
