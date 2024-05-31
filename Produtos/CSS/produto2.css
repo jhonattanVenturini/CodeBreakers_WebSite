@@ -401,45 +401,46 @@ footer {
   width: 100%;
   height: auto;
   min-height: fit-content;
-  background-color:#fff;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;
-  }
- 
-  footer h2 {
+}
+
+footer h2 {
   text-align: center;
   color: rgb(203, 87, 45);
   padding: 1rem;
-  }
- 
-  .row {
+}
+
+.row {
   display: flex;
   flex: wrap;
   gap: 10px;
-  text-align: center; 
-  height: 350px;
+  text-align: center;
+  font-size: clamp(8px, 4vw, 16px);
+  height:350px;
   }
- 
-  .container-footer {
+
+.container-footer { 
   width: 500px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding-bottom: 1rem;
   background-color: #fff;
-  }
+  font-size: clamp(12px, 4vw, 32px);
+}
 
-  footer ul.nomes {
-  color:black;
+footer ul.nomes {
+  color: black;
   list-style: none;
-  display: block;
   justify-content: center;
   align-items: center;
-  margin-left: 0.2rem;
- }
- footer li.nome{
+  padding: 1rem;
+}
+footer li.nome {
   width: 170px;
   color: black;
   font-weight: bold;
@@ -447,42 +448,49 @@ footer {
   font-size: 65%;
   align-items: center;
   justify-content: center;
-  padding:0;
+  padding: 0;
   cursor: pointer;
   transition: 0.2s all ease-in-out;
- }
- footer li.nome:hover{
+}
+footer li.nome:hover {
   color: rgb(203, 87, 45);
- }
- footer div.linha-vertical {
+}
+footer div.linha-vertical {
   border-left: 3px solid rgb(203, 87, 45);
   height: 330px;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
- footer p{
+footer p {
+  margin-inline: 10px;
   text-align: justify;
-  display: flex;
-  flex-wrap: nowrap;
+  display: block;
+  flex-wrap: wrap;
   font-weight: bold;
   font-size: 65%;
   cursor: pointer;
   transition: 0.2s all ease-in-out;
- }
- footer p:hover{
+  font-size: clamp(8px, 4vw, 16px);
+  padding: 0.2rem;
+  }
+footer p:hover {
   color: rgb(203, 87, 45);
- }
- @media screen and (max-width: 695px) {
-
+}
+@media screen and (max-width: 600px) {
   .row {
-  display: flex;
-  flex: wrap;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem;
+  }
+  .footer p{
+    font-size: clamp(8px, 4vw, 16px);
+    padding: 1rem;
+    margin: 15px 15px 15px 15px;
   }
 }
  
