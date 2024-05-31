@@ -106,7 +106,16 @@ main {
   body {
     overflow-x: hidden;
   }
-
+  .header {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .logo h1 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
   .nav-list {
     position: absolute;
     top: 8vh;
@@ -323,7 +332,6 @@ sup {
   background-color: #fff;
   margin: 15px 15px 15px 15px;
 }
-
 footer {
   width: 100%;
   height: auto;
@@ -347,60 +355,67 @@ footer h2 {
   gap: 10px;
   text-align: center;
   font-size: clamp(8px, 4vw, 16px);
-  height:350px;
-  }
+  height: 350px;
+}
 
-.container-footer { 
+.container-footer {
   width: 500px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding-bottom: 1rem;
   background-color: #fff;
-  font-size: clamp(12px, 4vw, 32px);
+  margin-bottom: 35px;
 }
-
-footer ul.nomes {
+.container-footer h2 {
+  background-color: rgb(203, 87, 45);
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  padding: 0.2rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+ }
+.container-footer ul.nomes {
   color: black;
-  list-style: none;
-  justify-content: center;
-  align-items: center;
   padding: 1rem;
+  text-align: left;
+  justify-content: space-between;
+  margin-top: 75px;
 }
-footer li.nome {
-  width: 170px;
+.container-footer li.nome {
   color: black;
   font-weight: bold;
   text-align: justify;
   font-size: 65%;
   align-items: center;
   justify-content: center;
-  padding: 0;
   cursor: pointer;
   transition: 0.2s all ease-in-out;
+  width: 170px;
 }
-footer li.nome:hover {
+.container-footer li.nome:hover {
   color: rgb(203, 87, 45);
 }
-footer div.linha-vertical {
+.linha-vertical {
   border-left: 3px solid rgb(203, 87, 45);
   height: 330px;
   text-align: center;
   align-items: center;
   justify-content: center;
+  font-size: clamp(8px, 4vw, 16px);
 }
 footer p {
   margin-inline: 10px;
   text-align: justify;
-  display: block;
   flex-wrap: wrap;
   font-weight: bold;
-  font-size: 65%;
   cursor: pointer;
   transition: 0.2s all ease-in-out;
   font-size: clamp(8px, 4vw, 16px);
   padding: 0.2rem;
-  }
+  margin-bottom: 15px;
+}
 footer p:hover {
   color: rgb(203, 87, 45);
 }
@@ -414,9 +429,10 @@ footer p:hover {
     justify-content: center;
     padding: 0.3rem;
   }
-  .footer p{
+  .footer p {
     font-size: clamp(8px, 4vw, 16px);
     padding: 1rem;
     margin: 15px 15px 15px 15px;
+    flex-direction: column;
   }
 }

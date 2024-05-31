@@ -396,7 +396,6 @@ li {
   text-align: justify;
   width: 90%;
 }
-
 footer {
   width: 100%;
   height: auto;
@@ -420,10 +419,10 @@ footer h2 {
   gap: 10px;
   text-align: center;
   font-size: clamp(8px, 4vw, 16px);
-  height:350px;
-  }
+  height: 350px;
+}
 
-.container-footer { 
+.container-footer {
   width: 500px;
   display: flex;
   flex-direction: column;
@@ -468,12 +467,11 @@ footer p {
   display: block;
   flex-wrap: wrap;
   font-weight: bold;
-  font-size: 65%;
   cursor: pointer;
   transition: 0.2s all ease-in-out;
   font-size: clamp(8px, 4vw, 16px);
   padding: 0.2rem;
-  }
+}
 footer p:hover {
   color: rgb(203, 87, 45);
 }
@@ -482,17 +480,15 @@ footer p:hover {
     display: flex;
     flex: wrap;
     flex-direction: column;
-    text-align: justify;
+    text-align: center;
     align-items: center;
     justify-content: center;
     padding: 0.3rem;
   }
-  .footer p{
+  .linha-vertical p {
     font-size: clamp(8px, 4vw, 16px);
-    padding: 1rem;
-    margin: 15px 15px 15px 15px;
+    padding: 0.3rem;
+    margin: 15px 0px 15px 0px;
+    flex-direction: column;
   }
 }
- 
-
-

@@ -93,6 +93,11 @@ main {
   body {
     overflow-x: hidden;
   }
+  header {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
   .nav-list {
     position: absolute;
     top: 8vh;
