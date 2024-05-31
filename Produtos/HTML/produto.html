@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/imgs/unnamed.webp">
+  <link rel="stylesheet" href="/Produtos/CSS/produto2.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <title>Detalhes</title>
+</head>
+
+<body>
+  
+  <header>
+    <!-- barra de navegação -->
+    <nav>
+      <div class=" logo">
+        <a href="/Pagina_inicial/HTML/index.html"><img src="/imgs/home.logo.png"></a>
+        <h1>Natura</h1>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <!-- menu de navegação -->
+      <ul class="nav-list">
+        <li><a href="/Pagina_inicial/HTML/index.html">Home</a></li>
+        <li><a href="/Pagina_inicial/HTML/feminina.html">Feminina</a></li>
+        <li><a href="/Pagina_inicial/HTML/cabelos.html">Cabelos</a></li>
+        <li><a href="/Pagina_inicial/HTML/detalhes.html">Detalhes</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+  <!-- Produto 1 natura essence -->
+  <section class="container">
+    <div class="icon"><img src="/imgs/produto1-essence.jpg" alt="imagem do perfume Natura Essence"></div>
+    <div class="estrela">
+        <div class="star"><input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+            <label for="cm_star-1"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-1" name="fb" value="1"/>
+            <label for="cm_star-2"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-2" name="fb" value="2"/>
+            <label for="cm_star-3"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-3" name="fb" value="3"/>
+            <label for="cm_star-4"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-4" name="fb" value="4"/>
+            <label for="cm_star-5"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-5" name="fb" value="5"/>
+          </div>
+        <h1>Natura Homem Essence<h1>
+                <p>Oferece uma sofisticada fragrância masculina, é esculpida com o coração das madeiras mais nobres como cedro e patchouli, enriquecida com a elegância das notas ambaradas e do cacau, ingrediente natural da biodiversidade brasileira. </p>
+                <div class="seletor">
+                    <p class="valor">Preço total: <sup>R$</sup><span id="total">199.90</span></p>
+                    <button onclick="document.getElementById('Popup').showModal();" class="comprar"><a href=""></a> Comprar </button>
+                </div>
+                <dialog id ="Popup">
+                  <!-- Conteúdo do popup -->
+                  <img src="/imgs/detalhes.popup.check.jpg">
+                  <span></span>
+                  <h2>Compra Realizada com Sucesso!</h2>
+                  <p>O seu produto foi comprado com sucesso.<br>Obrigado pela sua compra!</p>
+                  <button onclick="document.getElementById('Popup').close();">Fechar</button>
+                </dialog>    
+              </section>
+</section>
+
+<section class="conteudo">
+    <h2>Natura Homem Essence</h2>
+    <p class="texto">  Natura Homem Essence, Marcante, intenso e sensual com ingredientes naturais da biodiversidade brasileira. Para homens que buscam elegância e sofisticação, Natura Homem Essence envolve e marca presença em quem a usa e aos à sua volta.Oferece uma fragrância intensa com um alto nível de concentração é recomendado para o inverno e noites intermináveis, pois dura muitas horas na pele.</p>
+
+    <h2>Fragrância</h2>
+    <p class="texto">Natura Homem Essence é um deo parfum que exala um aroma amadeirado intenso. Criada para quem busca uma experiência olfativa intensa e memorável.</p>
+   
+    <h2>Dicas de Uso</h2>
+    <p class="texto">Cada pessoa tem seu jeito único de se perfumar. No entanto, para aproveitar ao máximo o potencial da fragrância masculina, recomendamos aplicá-la em áreas estratégicas, como punho, pescoço e atrás das orelhas. Essas regiões possuem maior circulação sanguínea, o que ajuda a difundir o aroma de maneira mais intensa.</p>
+    <h2>Características</h2>
+    <ul>
+        <li>Produto Vegano</li>
+        <li>Dura até 10h na pele</li>
+        <li>Ocasões especiais</li>
+        <li>Amadeirado intenso</li>
+      </ul>
+</section>
+
+  <br>
+
+
+  <script src="/Pagina_inicial/JS/mobile-navbar.js"></script>
+
+  <!-- rodape da pagina -->
+  <footer>
+    <div class="container-footer">
+        <h2>&copy;Natura</h2>
+    <div class="row">
+        <ul class="nomes">
+            <li class="nome">Amanda Piegaia Lima Santos</li>
+            <li class="nome">Jhonattan de Carvalho Romão Venturini</li>
+            <li class="nome">Larissa Trevisani Amaral</li>
+            <li class="nome">Vinícius Pereira Garcia</li>
+        </ul>
+        <div class="linha-vertical"></div>
+    <p>  Projeto: Desenvolvimento de aplicação front-end para web.
+        Advertência: Este Site foi construído para fins didáticos. Dados técnicos, imagens, textos e referências de ordens diversas foram utilizados apenas com o objetivo de possibilitar aos alunos dos cursos de ADS e SI a construção do projeto proposto. As informações aqui exibidas não refletem a realidade.</p>
+    </div>
+    </div>
+    </footer>
+  </main>
+</body>
+
+</html>

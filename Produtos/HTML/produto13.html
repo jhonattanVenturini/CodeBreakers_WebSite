@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/imgs/unnamed.webp">
+  <link rel="stylesheet" href="/Produtos/CSS/produto2.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <title>Detalhes</title>
+</head>
+
+<body>
+  <!-- produtos pagina home -->
+  <header>
+    <!-- barra de navegação -->
+    <nav>
+      <div class=" logo">
+        <a href="/Pagina_inicial/HTML/index.html"><img src="/imgs/home.logo.png"></a>
+        <h1>Natura</h1>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <!-- menu de navegação -->
+      <ul class="nav-list">
+        <li><a href="/Pagina_inicial/HTML/index.html">Home</a></li>
+        <li><a href="/Pagina_inicial/HTML/feminina.html">Feminina</a></li>
+        <li><a href="/Pagina_inicial/HTML/cabelos.html">Cabelos</a></li>
+        <li><a href="/Pagina_inicial/HTML/detalhes.html">Detalhes</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+  <!-- Produto 13 Shampoo e Condicionador Lumina-->
+  <section class="container">
+    <div class="icon"><img src="/imgs/detalhes.produto13.shampoo-condicionador.webp"alt="imagem do Shampoo e Condicionador Lumina para Cabelos Secos"></div>
+    <div class="estrela">
+        <div class="star"><input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+            <label for="cm_star-1"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-1" name="fb" value="1"/>
+            <label for="cm_star-2"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-2" name="fb" value="2"/>
+            <label for="cm_star-3"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-3" name="fb" value="3"/>
+            <label for="cm_star-4"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-4" name="fb" value="4"/>
+            <label for="cm_star-5"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-5" name="fb" value="5"/>
+          </div>
+        <h1> Shampoo e Condicionador para Cabelos Secos
+          Lumina<h1>
+                <p>Shampoo e Condicionador para Cabelos Secos Lumina formam uma poderosa dupla de
+                  cuidados capilares que visam reparar, nutrir e hidratar profundamente os cabelos secos. </p>
+                <div class="seletor">
+                    <p class="valor">Preço total: <sup>R$</sup><span id="total"> 99.90</span></p>
+                    <button onclick="document.getElementById('Popup').showModal();" class="comprar"><a href=""></a> Comprar </button>
+                </div>
+                <dialog id ="Popup">
+                  <!-- Conteúdo do popup -->
+                  <img src="/imgs/detalhes.popup.check.jpg" alt="">
+                  <span></span>
+                  <h2>Compra Realizada com Sucesso!</h2>
+                  <p>O seu produto foi comprado com sucesso.<br>Obrigado pela sua compra!</p>
+                  <button onclick="document.getElementById('Popup').close();">Fechar</button>
+                </dialog>   
+              </div>
+  </section>
+<section class="conteudo">
+
+    <h2> Shampoo e Condicionador para Cabelos Secos
+      Lumina </h2>
+    <p class="texto">Esta linha é especialmente formulada com ingredientes de qualidade para oferecer benefícios
+      específicos aos cabelos que necessitam de mais hidratação e cuidados intensivos.</p>
+
+    <h2>Benefícios</h2>
+  <ul>
+     <li> 3x mais fortes e resistentes</li> 
+     <li> 5x mais maciez</li>
+     <li> 5x mais hidratação</li>
+     <li> 6x mais fáceis de pentear</li>
+     <li> Recuperação da saúde e brilho dos cabelos</li>
+     <li> Nutrição para cabelos secos</li>
+  </ul>
+
+    <h2>Dicas de Uso</h2>
+    <p class="texto">Aplique o shampoo no couro cabeludo e massageie suavemente com a ponta dos dedos. Isso
+      estimula a circulação e ajuda na absorção dos nutrientes. Após a aplicação do shampoo,
+      enxágue completamente para remover todos os resíduos, preparando o cabelo para o
+      condicionador.
+      Aplique o condicionador principalmente nas pontas, onde o cabelo é mais seco e danificado.
+      Evite aplicar diretamente no couro cabeludo para não deixar resíduos que podem pesar os
+      fios. Deixe o condicionador agir por alguns minutos para que os ativos penetrem bem nos fios
+      e proporcionem uma hidratação mais eficaz. Para fechar as cutículas e selar a hidratação,
+      finalize o enxágue com água fria. Isso também ajudará a dar mais brilho aos cabelos.</p>
+
+    <h2>Caracteríticas</h2>
+    <ul>
+        <li>Produto Vegano</li>
+        <li>Tem refil</li>
+        <li>Limpeza e nutrição para cabelos secos</li>
+        <li>2,5x mais maciez</li>
+      </ul>
+      
+</section>
+
+  <br>
+
+
+
+  <script src="/Pagina_inicial/JS/mobile-navbar.js"></script>
+
+  <!-- rodape da pagina -->
+  <footer>
+    <div class="container-footer">
+        <h2>&copy;Natura</h2>
+    <div class="row">
+        <ul class="nomes">
+            <li class="nome">Amanda Piegaia Lima Santos</li>
+            <li class="nome">Jhonattan de Carvalho Romão Venturini</li>
+            <li class="nome">Larissa Trevisani Amaral</li>
+            <li class="nome">Vinícius Pereira Garcia</li>
+        </ul>
+        <div class="linha-vertical"></div>
+    <p>  Projeto: Desenvolvimento de aplicação front-end para web.
+        Advertência: Este Site foi construído para fins didáticos. Dados técnicos, imagens, textos e referências de ordens diversas foram utilizados apenas com o objetivo de possibilitar aos alunos dos cursos de ADS e SI a construção do projeto proposto. As informações aqui exibidas não refletem a realidade.</p>
+    </div>
+    </div>
+    </footer>
+</body>
+
+</html>

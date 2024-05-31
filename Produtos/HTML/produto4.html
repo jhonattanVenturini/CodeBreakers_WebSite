@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/imgs/unnamed.webp">
+  <link rel="stylesheet" href="/Produtos/CSS/produto2.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <title>Detalhes</title>
+</head>
+
+<body>
+  <!-- produtos pagina home -->
+  <header>
+    <!-- barra de navegação -->
+    <nav>
+      <div class=" logo">
+        <a href="/Pagina_inicial/HTML/index.html"><img src="/imgs/home.logo.png"></a>
+        <h1>Natura</h1>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <!-- menu de navegação -->
+      <ul class="nav-list">
+        <li><a href="/Pagina_inicial/HTML/index.html">Home</a></li>
+        <li><a href="/Pagina_inicial/HTML/feminina.html">Feminina</a></li>
+        <li><a href="/Pagina_inicial/HTML/cabelos.html">Cabelos</a></li>
+        <li><a href="/Pagina_inicial/HTML/detalhes.html">Detalhes</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+  <!-- Produto 4 Natura Homem-->
+  <section class="container">
+    <div class="icon"><img src="/imgs/detalhes.produto4.natura-homem.webp"alt="imagem do perfume Natura Homem"></div>
+    <div class="estrela">
+        <div class="star"><input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+            <label for="cm_star-1"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-1" name="fb" value="1"/>
+            <label for="cm_star-2"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-2" name="fb" value="2"/>
+            <label for="cm_star-3"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-3" name="fb" value="3"/>
+            <label for="cm_star-4"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-4" name="fb" value="4"/>
+            <label for="cm_star-5"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-5" name="fb" value="5"/>
+          </div>
+        <h1> Natura Homem<h1>
+                <p>Natura Homem é o desodorante colônia masculino que entrega uma fragrância amadeirada equilibrada para todos os momentos.</p>
+                <div class="seletor">
+                    <p class="valor">Preço total: <sup>R$</sup><span id="total">179.90</span></p>
+                    <button onclick="document.getElementById('Popup').showModal();" class="comprar"><a href=""></a> Comprar </button>
+                </div>
+                <dialog id ="Popup">
+                  <!-- Conteúdo do popup -->
+                  <img src="/imgs/detalhes.popup.check.jpg" alt="">
+                  <span></span>
+                  <h2>Compra Realizada com Sucesso!</h2>
+                  <p>O seu produto foi comprado com sucesso.<br>Obrigado pela sua compra!</p>
+                  <button onclick="document.getElementById('Popup').close();">Fechar</button>
+                </dialog>    
+              </div>
+  </section>
+<section class="conteudo">
+    <h2> Natura Homem</h2>
+    <p class="texto"> Natura Homem é um amadeirado leve. Traz consigo o frescor das ervas aromáticas com um toque picante, além de notas de madeiras quentes. Indicado para aquele homem confiante e inesquecível, que busca um perfume que complete e evidencie a sua personalidade única. Desperte os sentidos com Natura Homem!</p>
+
+    <h2>Fragrância </h2>
+    <p class="texto">Amadeirado moderado.</p>
+
+    <h2>Dicas de Uso</h2>
+    <p class="texto">Todo mundo tem um jeito único de se perfumar. Mas para aproveitar todo o potencial da fragrância, nossa dica é que a aplique em áreas como o punho, pescoço e atrás das orelhas.</p>
+
+    <h2>Caracteríticas</h2>
+    <ul>
+        <li>Perfumaria Masculina</li>
+        <li>Dura até 8h na pele</li>
+        <li>Dia a dia</li>
+        <li>Amadeirado Moderado</li>
+      </ul>
+      
+</section>
+
+  <br>
+
+
+
+  <script src="/Pagina_inicial/JS/mobile-navbar.js"></script>
+
+  <!-- rodape da pagina -->
+  <footer>
+    <div class="container-footer">
+        <h2>&copy;Natura</h2>
+    <div class="row">
+        <ul class="nomes">
+            <li class="nome">Amanda Piegaia Lima Santos</li>
+            <li class="nome">Jhonattan de Carvalho Romão Venturini</li>
+            <li class="nome">Larissa Trevisani Amaral</li>
+            <li class="nome">Vinícius Pereira Garcia</li>
+        </ul>
+        <div class="linha-vertical"></div>
+    <p>  Projeto: Desenvolvimento de aplicação front-end para web.
+        Advertência: Este Site foi construído para fins didáticos. Dados técnicos, imagens, textos e referências de ordens diversas foram utilizados apenas com o objetivo de possibilitar aos alunos dos cursos de ADS e SI a construção do projeto proposto. As informações aqui exibidas não refletem a realidade.</p>
+    </div>
+    </div>
+    </footer>
+
+  </main>
+</body>
+
+</html>

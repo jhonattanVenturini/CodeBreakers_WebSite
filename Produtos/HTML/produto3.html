@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/imgs/unnamed.webp">
+  <link rel="stylesheet" href="/Produtos/CSS/produto2.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <title>Detalhes</title>
+</head>
+
+<body>
+  <!-- produtos pagina home -->
+  <header>
+    <!-- barra de navegação -->
+    <nav>
+      <div class=" logo">
+        <a href="/Pagina_inicial/HTML/index.html"><img src="/imgs/home.logo.png"></a>
+        <h1>Natura</h1>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <!-- menu de navegação -->
+      <ul class="nav-list">
+        <li><a href="/Pagina_inicial/HTML/index.html">Home</a></li>
+        <li><a href="/Pagina_inicial/HTML/feminina.html">Feminina</a></li>
+        <li><a href="/Pagina_inicial/HTML/cabelos.html">Cabelos</a></li>
+        <li><a href="/Pagina_inicial/HTML/detalhes.html">Detalhes</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+  <!-- Produto 3 Kaiak Aero Masculino -->
+  <section class="container">
+    <div class="icon"><img src="/imgs/detalhes.produto3.kaiak.webp" alt="imagem do perfume Natura Kaiak Aero Masculino"></div>
+    <div class="estrela">
+        <div class="star"><input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+            <label for="cm_star-1"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-1" name="fb" value="1"/>
+            <label for="cm_star-2"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-2" name="fb" value="2"/>
+            <label for="cm_star-3"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-3" name="fb" value="3"/>
+            <label for="cm_star-4"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-4" name="fb" value="4"/>
+            <label for="cm_star-5"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-5" name="fb" value="5"/>
+          </div>
+        <h1> Kaiak Aero Masculino<h1>
+                <p>Kaiak Aero Masculino é uma fragrância moderna que encapsula a sensação revigorante do encontro do vento com a água do mar. Uma explosão refrescante de notas tônicas combinadas com a potência de notas verdes, como o zimbro e ruibarbo.</p>
+                <div class="seletor">
+                    <p class="valor">Preço total: <sup>R$</sup><span id="total">165.90</span></p>
+                    <button onclick="document.getElementById('Popup').showModal();" class="comprar"><a href=""></a> Comprar </button>
+                </div>
+                <dialog id ="Popup">
+                  <!-- Conteúdo do popup -->
+                  <img src="/imgs/detalhes.popup.check.jpg" alt="">
+                  <span></span>
+                  <h2>Compra Realizada com Sucesso!</h2>
+                  <p>O seu produto foi comprado com sucesso.<br>Obrigado pela sua compra!</p>
+                  <button onclick="document.getElementById('Popup').close();">Fechar</button>
+                </dialog>    
+              </div>
+  </section>
+<section class="conteudo">
+    <h2> Kaiak Aero Masculino</h2>
+    <p class="texto">Kaiak Aero é uma fragrância que nos mostra a força e a recarga de energia que nos faz sentir vivos. Com seu frescor renovador, essa essência ativa os sentidos, proporcionando uma experiência sensorial única e intensa. Uma verdadeira celebração da vida e da energia capturada na Colônia Kaiak Aero Masculino.</p>
+
+    <h2>Fragrância</h2>
+    <p class="texto">O encontro do vento com a água do mar. Uma fragrância moderna que revela a explosão refrescante das notas tônicas com a potência nas notas verdes, como zimbro e ruibarbo.</p>
+   
+    <h2>Dicas de Uso</h2>
+    <p class="texto">Para uma melhor perfumação, aplique a fragrância em áreas como punhos, pescoço e atrás das orelhas.</p>
+    <h2>Características</h2>
+    <ul>
+        <li>Produto Vegano</li>
+        <li>Aromático Aquoso Moderado</li>
+        <li>Dia a dia</li>
+        <li>Nova embalagem</li>
+      </ul>
+   </section>
+
+  <br>
+
+
+
+  <script src="/Pagina_inicial/JS/mobile-navbar.js"></script>
+
+  <!-- rodape da pagina -->
+  <footer>
+    <div class="container-footer">
+        <h2>&copy;Natura</h2>
+    <div class="row">
+        <ul class="nomes">
+            <li class="nome">Amanda Piegaia Lima Santos</li>
+            <li class="nome">Jhonattan de Carvalho Romão Venturini</li>
+            <li class="nome">Larissa Trevisani Amaral</li>
+            <li class="nome">Vinícius Pereira Garcia</li>
+        </ul>
+        <div class="linha-vertical"></div>
+    <p>  Projeto: Desenvolvimento de aplicação front-end para web.
+        Advertência: Este Site foi construído para fins didáticos. Dados técnicos, imagens, textos e referências de ordens diversas foram utilizados apenas com o objetivo de possibilitar aos alunos dos cursos de ADS e SI a construção do projeto proposto. As informações aqui exibidas não refletem a realidade.</p>
+    </div>
+    </div>
+    </footer>
+  </main>
+</body>
+
+</html>
