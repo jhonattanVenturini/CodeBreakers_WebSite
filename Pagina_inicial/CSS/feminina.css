@@ -13,6 +13,7 @@ body {
   background-color: antiquewhite;
   height: 100vh;
   height: 100%;
+  display: block;
 }
 header {
   background-color: #fff;
@@ -106,7 +107,7 @@ main {
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin-left: 15px;
   }
   .nav-list {
     position: absolute;
