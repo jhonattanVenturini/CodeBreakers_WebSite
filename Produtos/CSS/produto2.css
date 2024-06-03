@@ -13,6 +13,7 @@ body {
   padding: 0;
   background-color: rgb(223, 212, 198);
   width: 100%;
+  display: block;
 }
 header {
   background-color: #fff;
@@ -28,9 +29,8 @@ header {
   padding: 0.5rem;
   width: 68px;
   height: 50px;
-  margin: 0.3cm;
 }
-h1 {
+.logo h1 {
   color: rgb(220, 64, 7);
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -94,6 +94,19 @@ main {
 @media (max-width: 999px) {
   body {
     overflow-x: hidden;
+    display: block;
+  }
+  .header {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: block;
+  }
+  .logo h1 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
   }
   .nav-list {
     position: absolute;
@@ -105,7 +118,7 @@ main {
     align-items: center;
     justify-content: space-around;
     transform: translateX(100%);
-    transition: transform 0.3s ease-in;
+    transition: transform 0.1s ease-in;
   }
   .nav-list li {
     margin-left: 0;
@@ -117,7 +130,7 @@ main {
   .container {
     max-width: 90%;
     margin: 0;
-    padding: px;
+    padding: 0px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -386,7 +399,7 @@ h2 {
   width: 100%;
   font-weight: bold;
 }
-ul {
+.conteudo ul {
   margin-left: 80px;
   list-style: none;
   text-align: justify;
@@ -397,98 +410,78 @@ li {
   width: 90%;
 }
 footer {
-  width: 100%;
-  height: auto;
-  min-height: fit-content;
-  background-color: #fff;
-  display: flex;
+  text-align: center;
+  align-items: center;
   justify-content: center;
-  border-top-left-radius: 32px;
-  border-top-right-radius: 32px;
+  background-color: #fff;
+  margin: 15px 15px 15px 15px;
 }
-
-footer h2 {
-  text-align: center;
-  color: rgb(203, 87, 45);
-  padding: 1rem;
+footer h1 {
+  background-color: rgb(203, 87, 45);
+  color: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
-
-.row {
-  display: flex;
-  flex: wrap;
-  gap: 10px;
-  text-align: center;
-  font-size: clamp(8px, 4vw, 16px);
-  height: 350px;
-}
-
 .container-footer {
-  width: 500px;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding-bottom: 1rem;
   background-color: #fff;
-  font-size: clamp(12px, 4vw, 32px);
-}
-
-footer ul.nomes {
-  color: black;
-  list-style: none;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  font-size: clamp(8px, 4vw, 16px);
   padding: 1rem;
 }
-footer li.nome {
-  width: 170px;
-  color: black;
+.container-footer li {
+  font-size: clamp(4px, 4vw, 16px);
   font-weight: bold;
-  text-align: justify;
-  font-size: 65%;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
+  flex-wrap: nowrap;
   cursor: pointer;
   transition: 0.2s all ease-in-out;
+  margin: 15px 0px 0px 75px;
+  width: 170px;
+  text-align: center;
 }
-footer li.nome:hover {
+.container-footer li:hover {
   color: rgb(203, 87, 45);
 }
-footer div.linha-vertical {
+.container-footer p {
   border-left: 3px solid rgb(203, 87, 45);
-  height: 330px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-footer p {
-  margin-inline: 10px;
   text-align: justify;
-  display: block;
-  flex-wrap: wrap;
+  columns: 1;
+  font-size: clamp(8px, 4vw, 16px);
   font-weight: bold;
+  padding: 2rem;
+  text-align: justify;
+  flex-wrap: wrap;
   cursor: pointer;
   transition: 0.2s all ease-in-out;
-  font-size: clamp(8px, 4vw, 16px);
-  padding: 0.2rem;
+  margin: 15px 0px 0px 15px;
 }
-footer p:hover {
+.container-footer p:hover {
   color: rgb(203, 87, 45);
 }
 @media screen and (max-width: 600px) {
-  .row {
+  .container-footer {
     display: flex;
     flex: wrap;
     flex-direction: column;
-    text-align: center;
+    text-align: justify;
     align-items: center;
     justify-content: center;
-    padding: 0.3rem;
+    padding: 0.2rem;
   }
-  .linha-vertical p {
-    font-size: clamp(8px, 4vw, 16px);
-    padding: 0.3rem;
-    margin: 15px 0px 15px 0px;
+  .container-footer li {
+    margin: auto;
+  }
+  .container-footer p {
     flex-direction: column;
+    font-size: clamp(8px, 4vw, 16px);
+    padding: 1rem;
+    margin: 15px 15px 15px 15px;
+    flex-direction: column;
+    border-left: 3px solid rgb(203, 87, 45);
+    
+  }
+  .container-footer p:hover {
+    background-color: antiquewhite;
+    color: rgb(203, 87, 45);
   }
 }
