@@ -13,6 +13,7 @@ body {
   background-color: antiquewhite;
   height: 100vh;
   height: 100%;
+  display: block;
 }
 header {
   background-color: #fff;
@@ -28,7 +29,7 @@ header {
   width: 68px;
   height: 50px;
 }
-h1 {
+.logo h1 {
   color: rgb(220, 64, 7);
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -92,6 +93,19 @@ main {
 @media (max-width: 999px) {
   body {
     overflow-x: hidden;
+    display: block;
+  }
+  .header {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: block;
+  }
+  .logo h1 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
   }
   .nav-list {
     position: absolute;
@@ -103,7 +117,7 @@ main {
     align-items: center;
     justify-content: space-around;
     transform: translateX(100%);
-    transition: transform 0.3s ease-in;
+    transition: transform 0.1s ease-in;
   }
   .nav-list li {
     margin-left: 0;
@@ -111,6 +125,9 @@ main {
   }
   .mobile-menu {
     display: block;
+  }
+  .cards {
+    margin: 15px 15px 15px 15px;
   }
 }
 .nav-list.active {
@@ -138,7 +155,7 @@ main {
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
 }
-#foto{
+#foto {
   background-color: #fff;
   width: 100%;
   height: 350px;
@@ -148,6 +165,9 @@ main {
   background-color: white;
   border-radius: 8px;
   padding: 0;
+  font-size: clamp(12px, 4vw, 32px);
+  margin: 15px 15px 15px 15px;
+  padding: 0.2rem;
 }
 
 .pagina-- h3 {
@@ -158,11 +178,10 @@ main {
 }
 .pagina-- p {
   text-align: justify;
-  margin: 0px 15px 15px 15px;
-  padding: 0.2rem;
-  color: #2c0c33;
-  font-size: 80;
+  justify-content: center;
+  padding: 1rem;
 }
+
 .produtos {
   background-color: antiquewhite;
   columns: 4;
@@ -200,7 +219,7 @@ main {
   width: 280px;
   height: 280px;
 }
-.cards h1{
+.cards h1 {
   color: rgb(220, 64, 7);
 }
 .cards p {
@@ -238,102 +257,80 @@ sup {
 .cards.about {
   box-shadow: 20px 20px 50px -30px rgb(220, 64, 7);
 }
-
 footer {
-  width: 100%;
-  height: auto;
-  min-height: fit-content;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  border-top-left-radius: 32px;
-  border-top-right-radius: 32px;
-}
-
-footer h2 {
   text-align: center;
-  color: rgb(203, 87, 45);
-  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  margin: 15px 15px 15px 15px;
 }
-
-.row {
+footer h1 {
+  background-color: rgb(203, 87, 45);
+  color: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.container-footer {
   display: flex;
-  flex: wrap;
-  gap: 10px;
+  background-color: #fff;
   text-align: center;
   font-size: clamp(8px, 4vw, 16px);
-  height:350px;
-  }
-
-.container-footer { 
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding-bottom: 1rem;
-  background-color: #fff;
-  font-size: clamp(12px, 4vw, 32px);
-}
-
-footer ul.nomes {
-  color: black;
-  list-style: none;
-  justify-content: center;
-  align-items: center;
   padding: 1rem;
 }
-footer li.nome {
+.container-footer li {
+  font-size: clamp(4px, 4vw, 16px);
+  font-weight: bold;
+  flex-wrap: nowrap;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+  margin: 15px 0px 0px 75px;
   width: 170px;
-  color: black;
-  font-weight: bold;
-  text-align: justify;
-  font-size: 65%;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  cursor: pointer;
-  transition: 0.2s all ease-in-out;
+  text-align: center;
 }
-footer li.nome:hover {
+.container-footer li:hover {
   color: rgb(203, 87, 45);
 }
-footer div.linha-vertical {
+.container-footer p {
   border-left: 3px solid rgb(203, 87, 45);
-  height: 330px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-footer p {
-  margin-inline: 10px;
   text-align: justify;
-  display: block;
-  flex-wrap: wrap;
+  columns: 1;
+  font-size: clamp(8px, 4vw, 16px);
   font-weight: bold;
-  font-size: 65%;
+  padding: 2rem;
+  text-align: justify;
+  flex-wrap: wrap;
   cursor: pointer;
   transition: 0.2s all ease-in-out;
-  font-size: clamp(8px, 4vw, 16px);
-  padding: 0.2rem;
-  }
-footer p:hover {
+  margin: 15px 0px 0px 15px;
+}
+.container-footer p:hover {
   color: rgb(203, 87, 45);
 }
 @media screen and (max-width: 600px) {
-  .row {
+  .container-footer {
     display: flex;
     flex: wrap;
     flex-direction: column;
     text-align: justify;
     align-items: center;
     justify-content: center;
-    padding: 0.3rem;
+    padding: 0.2rem;
   }
-  .footer p{
+  .container-footer li {
+    margin: auto;
+  }
+  .container-footer p {
+    flex-direction: column;
     font-size: clamp(8px, 4vw, 16px);
     padding: 1rem;
     margin: 15px 15px 15px 15px;
+    flex-direction: column;
+    border-left: 3px solid rgb(203, 87, 45);
+    
+  }
+  .container-footer p:hover {
+    background-color: antiquewhite;
+    color: rgb(203, 87, 45);
   }
 }
-
 

@@ -13,6 +13,7 @@ body {
   background-color: antiquewhite;
   height: 100vh;
   height: 100%;
+  display: block;
 }
 
 header {
@@ -33,7 +34,7 @@ header {
   margin: 0.3cm;
 }
 
-h1 {
+.logo h1 {
   color: rgb(220, 64, 7);
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -105,16 +106,19 @@ main {
 @media (max-width: 999px) {
   body {
     overflow-x: hidden;
+    display: block;
   }
   .header {
     justify-content: center;
     text-align: center;
     align-items: center;
+    display: block;
   }
   .logo h1 {
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin-left: 15px;
   }
   .nav-list {
     position: absolute;
@@ -126,7 +130,7 @@ main {
     align-items: center;
     justify-content: space-around;
     transform: translateX(100%);
-    transition: transform 0.2s ease-in;
+    transition: transform 0.1s ease-in;
   }
 
   .nav-list li {
@@ -139,6 +143,10 @@ main {
   }
   .pagina-- h1 {
     text-align: center;
+    margin-left: 0;
+  }
+  .cards {
+    margin: 15px 15px 15px 15px;
   }
   .pg2-- {
     display: flex;
@@ -150,9 +158,6 @@ main {
     max-width: 90%;
     max-height: 100%;
     margin: 15px 15px 15px 15px;
-  }
-  .container-footer {
-    font-size: clamp(12px, 4vw, 32px);
   }
 }
 
@@ -211,7 +216,7 @@ main {
 .pagina-- h1 {
   color: rgb(220, 64, 7);
   font-size: x-large;
-  width: 98%;
+  text-align: left;
   margin-left: 25px;
 }
 
@@ -312,7 +317,7 @@ sup {
   border-radius: 8px;
   justify-content: center;
   text-align: justify;
-  margin: 15px 0px 15px 15px;
+  margin: 15px 15px 15px 15px;
   align-items: center;
   text-align: justify;
   padding: 1rem;
@@ -333,106 +338,78 @@ sup {
   margin: 15px 15px 15px 15px;
 }
 footer {
-  width: 100%;
-  height: auto;
-  min-height: fit-content;
-  background-color: #fff;
-  display: flex;
+  text-align: center;
+  align-items: center;
   justify-content: center;
-  border-top-left-radius: 32px;
-  border-top-right-radius: 32px;
-}
-
-footer h2 {
-  text-align: center;
-  color: rgb(203, 87, 45);
-  padding: 1rem;
-}
-
-.row {
-  display: flex;
-  flex: wrap;
-  gap: 10px;
-  text-align: center;
-  font-size: clamp(8px, 4vw, 16px);
-  height: 350px;
-}
-
-.container-footer {
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding-bottom: 1rem;
   background-color: #fff;
-  margin-bottom: 35px;
+  margin: 15px 15px 15px 15px;
 }
-.container-footer h2 {
+footer h1 {
   background-color: rgb(203, 87, 45);
   color: #fff;
-  padding: 0;
-  margin: 0;
-  padding: 0.2rem;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
- }
-.container-footer ul.nomes {
-  color: black;
-  padding: 1rem;
-  text-align: left;
-  justify-content: space-between;
-  margin-top: 75px;
 }
-.container-footer li.nome {
-  color: black;
+.container-footer {
+  display: flex;
+  background-color: #fff;
+  text-align: center;
+  font-size: clamp(8px, 4vw, 16px);
+  padding: 1rem;
+}
+.container-footer li {
+  font-size: clamp(4px, 4vw, 16px);
   font-weight: bold;
-  text-align: justify;
-  font-size: 65%;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: nowrap;
   cursor: pointer;
   transition: 0.2s all ease-in-out;
+  margin: 15px 0px 0px 75px;
   width: 170px;
+  text-align: center;
 }
-.container-footer li.nome:hover {
+.container-footer li:hover {
   color: rgb(203, 87, 45);
 }
-.linha-vertical {
+.container-footer p {
   border-left: 3px solid rgb(203, 87, 45);
-  height: 330px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  text-align: justify;
+  columns: 1;
   font-size: clamp(8px, 4vw, 16px);
-}
-footer p {
-  margin-inline: 10px;
+  font-weight: bold;
+  padding: 2rem;
   text-align: justify;
   flex-wrap: wrap;
-  font-weight: bold;
   cursor: pointer;
   transition: 0.2s all ease-in-out;
-  font-size: clamp(8px, 4vw, 16px);
-  padding: 0.2rem;
-  margin-bottom: 15px;
+  margin: 15px 0px 0px 15px;
 }
-footer p:hover {
+.container-footer p:hover {
   color: rgb(203, 87, 45);
 }
 @media screen and (max-width: 600px) {
-  .row {
+  .container-footer {
     display: flex;
     flex: wrap;
     flex-direction: column;
     text-align: justify;
     align-items: center;
     justify-content: center;
-    padding: 0.3rem;
+    padding: 0.2rem;
   }
-  .footer p {
+  .container-footer li {
+    margin: auto;
+  }
+  .container-footer p {
+    flex-direction: column;
     font-size: clamp(8px, 4vw, 16px);
     padding: 1rem;
     margin: 15px 15px 15px 15px;
     flex-direction: column;
+    border-left: 3px solid rgb(203, 87, 45);
+    
+  }
+  .container-footer p:hover {
+    background-color: antiquewhite;
+    color: rgb(203, 87, 45);
   }
 }
