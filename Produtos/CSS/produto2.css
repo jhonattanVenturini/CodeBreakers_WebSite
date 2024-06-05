@@ -143,11 +143,6 @@ main {
     width: 100%;
     max-width: 100%;
   }
-  .container div {
-    max-width: 100%;
-    padding-left: 16px;
-    flex-direction: column;
-  }
   .container div.estrela {
     flex-direction: column;
   }
@@ -216,7 +211,7 @@ section.container {
 section.container div.estrela {
   flex-direction: column;
   padding: 1rem;
-  margin: 10px 15px 0px 15px ;
+ 
 }
 div.star {
   text-align: right;
@@ -235,7 +230,7 @@ div.star {
 section.container div.icon {
   margin: 0;
   padding: 0;
-  width: 1000px;
+  width: 100%;
   float: left;
   border-radius: 8px;
 }
