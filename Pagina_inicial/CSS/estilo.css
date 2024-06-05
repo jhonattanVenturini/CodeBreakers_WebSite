@@ -267,7 +267,9 @@ main {
   height: 300px;
   object-fit: cover;
 }
-
+.cards h1{
+  color:rgb(220, 64, 7);
+}
 .cards p {
   color: red;
   text-decoration: line-through;
