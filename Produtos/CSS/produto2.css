@@ -155,7 +155,15 @@ main {
     flex-direction: column;
   }
   .container div.estrela dialog {
-    margin:  70px 70px 70px 70px;
+    margin: 70px 70px 70px 70px;
+  }
+  .conteudo {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin: 0;
+    padding: 0px;
   }
 }
 .nav-list.active {
@@ -226,7 +234,7 @@ section.container div.icon img {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
 }
 section.container div.icon img:hover {
   transform: scale(1.1);
@@ -315,7 +323,7 @@ section.container div.estrela dialog::backdrop {
 
 section.container div.estrela dialog {
   align-items: center;
-  margin:  70px 70px 70px 70px;
+  margin: 70px 70px 70px 70px;
 }
 section.container div.estrela dialog img {
   width: 40%;
@@ -358,56 +366,50 @@ section.container div.estrela dialog#Popup button:hover {
 }
 
 /* conteudo site  */
-section.conteudo {
-  display: block;
+.conteudo {
   justify-content: center;
-  width: 89%;
-  margin: auto;
-}
-section.conteudo p.texto {
   text-align: justify;
   align-items: center;
-  width: 100%;
-  border-radius: 15px;
-  padding: 0.3rem;
-  color: black;
-  background-color: white;
-  box-shadow: 20px 20px 50px -30px #2c0c33;
-  transition: transform 0.3s ease;
-}
-section.conteudo p.texto:hover {
-  transform: scale(1.1);
-}
-section.conteudo ul {
-  text-align: justify;
-  width: 100%;
   margin: auto;
-  border-radius: 15px;
-  padding: 0.3rem;
-  color: black;
-  background-color: white;
-  box-shadow: 20px 20px 50px -30px #2c0c33;
-  transition: transform 0.3s ease;
+  padding: 1rem;
 }
-section.conteudo ul:hover {
-  transform: scale(1.1);
+.conteudo-texto {
+  margin: 15px 15px 15px 15px;
 }
-h2 {
+.conteudo-texto h2 {
   color: rgb(220, 64, 7);
-  margin: auto;
   text-align: center;
-  width: 100%;
+  margin: 15px 15px 15px 15px ;
   font-weight: bold;
 }
-.conteudo ul {
-  margin-left: 80px;
-  list-style: none;
-  text-align: justify;
+.conteudo-texto p {
+  margin: 15px 15px 15px 15px;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 20px 20px 50px -30px #2c0c33;
+  transition: transform 0.2s ease;
+  max-width: 93%;
+  max-height: 80%;
 }
-li {
-  margin-left: -0px;
-  text-align: justify;
-  width: 90%;
+.conteudo-texto p:hover {
+  transform: scale(1.1);
+}
+.conteudo-texto ul {
+  margin: 15px 15px 15px 15px;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 20px 20px 50px -30px #2c0c33;
+  transition: transform 0.2s ease;
+  max-width: 93%;
+  max-height: 80%;
+}
+.conteudo-texto ul:hover{
+  transform: scale(1.1);
+}
+.conteudo-texto li {
+  list-style: none;
 }
 footer {
   text-align: center;
@@ -478,7 +480,6 @@ footer h1 {
     margin: 15px 15px 15px 15px;
     flex-direction: column;
     border-left: 3px solid rgb(203, 87, 45);
-    
   }
   .container-footer p:hover {
     background-color: antiquewhite;
