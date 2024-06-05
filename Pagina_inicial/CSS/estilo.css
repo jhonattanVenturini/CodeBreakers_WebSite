@@ -31,6 +31,7 @@ header {
   padding: 0.5rem;
   width: 68px;
   height: 50px;
+  margin-bottom: 0.3cm;
 }
 
 .logo h1 {
@@ -324,6 +325,7 @@ sup {
 .pg2-- h1 {
   padding: auto;
   margin-left: 25px;
+  color: rgb(220, 64, 7);
 }
 .pg2-- p {
   flex-direction: column;
