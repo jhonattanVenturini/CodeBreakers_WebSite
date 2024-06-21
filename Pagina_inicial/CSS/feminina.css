@@ -110,7 +110,7 @@ main {
     margin-left: 15px;
   }
   .nav-list {
-    position: absolute;
+    position: fixed;
     top: 8vh;
     right: 0;
     width: 50vw;
