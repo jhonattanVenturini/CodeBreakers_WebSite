@@ -13,7 +13,7 @@ Este trabalho foi realizado como um desafio para a Natura, com o objetivo de cri
 
 ⚙️ Como visualizar
 A apresentação do projeto já está hospedada online. Confira o slide clicando no link:
-👉 Apresentação do Projeto Natura
+👉 Apresentação do Projeto Natura: magical-zuccutto-49188f.netlify.app
 
 🤝 Contribuições
 Contribuições são bem-vindas! Para colaborar:
