@@ -1,30 +1,30 @@
 🌿 Projeto Natura - Desenvolvimento Front-End
 🎯 Objetivo
-Este projeto foi desenvolvido 100% na unha 🛠️ utilizando as ferramentas essenciais de front-end: HTML, CSS e JavaScript.
+Projeto desenvolvido 100% na unha 🛠️ com as ferramentas básicas de front-end: HTML, CSS e JavaScript.
 
-O foco principal foi entregar um site com:
+O foco principal foi garantir:
 ✅ Usabilidade aprimorada
 ✅ Alta funcionalidade
 ✅ Responsividade total
 
-Tudo pensado para garantir uma experiência fluida, intuitiva e acessível em todos os dispositivos, atendendo aos padrões modernos de desenvolvimento.
+para oferecer uma experiência intuitiva, fluida e acessível em todos os dispositivos.
 
-Este trabalho foi realizado como um desafio para a Natura, com o objetivo de criar uma interface prática e eficiente para o usuário final.
+Este projeto foi criado como desafio para a Natura, visando a criação de uma interface prática e eficiente para o usuário final.
 
-⚙️ Como visualizar
-A apresentação do projeto já está hospedada online. Confira o slide clicando no link:
-👉 Apresentação do Projeto Natura: magical-zuccutto-49188f.netlify.app
+⚙️ Visualização
+A apresentação do projeto está disponível online:
+👉 Slide do Projeto Natura
 
 🤝 Contribuições
 Contribuições são bem-vindas! Para colaborar:
 
 Faça um fork deste repositório
 
-Crie uma branch para suas alterações
+Crie uma branch com suas alterações
 
-Realize os commits com descrições claras
+Faça commits claros e objetivos
 
-Envie o pull request para análise
+Envie um Pull Request para análise
 
 📬 Contato
-Se tiver dúvidas ou sugestões, fique à vontade para abrir uma issue ou entrar em contato.
+Dúvidas ou sugestões? Abra uma issue ou entre em contato.
